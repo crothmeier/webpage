@@ -1,0 +1,442 @@
+/* -------------------------
+   1. GLOBAL RESETS & BASICS
+   ------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif; /* Approx. WP style */
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Container for typical site max-width */
+.container,
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography tweaks */
+h1, h2, h3, h4 {
+  color: #111;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* Asterisks used as decorative style for headings */
+.is-style-asterisk:before {
+  content: "✶";
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+  color: #111;
+}
+
+/* -------------------------
+   2. TOP HEADER / NAV
+   ------------------------- */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.site-header .logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.site-header .logo-area img {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.site-header .site-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 0.3rem 0.5rem;
+}
+
+.top-nav .subscribe-btn {
+  background: #000;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
+
+/* -------------------------
+   3. HERO SECTION
+   ------------------------- */
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff; /* White background per the screenshot */
+  border-bottom: 2px solid #e0e0e0; 
+}
+
+.hero-section .hero-heading {
+  font-size: 2rem; /* Big heading */
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-section .hero-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.hero-section img {
+  max-width: 320px; /* Large hero image */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+/* Center an "About us" button */
+.hero-section .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+/* -------------------------
+   4. LARGE IMAGE BLOCK
+   (The big stylized Lazarus logo block)
+   ------------------------- */
+
+.logo-block {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.logo-block img {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 8px; /* if needed */
+  display: block;
+  margin: 0 auto;
+}
+
+/* -------------------------
+   5. SERVICES SECTION
+   ------------------------- */
+
+.bg-light {
+  background-color: #fefefe;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.bg-light h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.service-columns .col-md-4 {
+  flex: 1 1 200px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.service-columns .col-md-4 h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Use asterisks above headings if desired 
+   .service-columns .col-md-4 h3:before { 
+     content: "✶";
+     margin-right: 0.5rem;
+   }
+*/
+
+/* -------------------------
+   6. WHY CHOOSE...
+   ------------------------- */
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.rounded-image {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 2-column layout for images + text */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mb-4 { margin-bottom: 1.5rem; }
+.mb-md-0 { margin-bottom: 0; }
+.col-md-6 {
+  flex: 1 1 50%;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+@media (max-width: 767px) {
+  .col-md-6 {
+    max-width: 100%;
+  }
+}
+
+/* -------------------------
+   7. TESTIMONIAL SECTION
+   ------------------------- */
+
+.bg-contrast {
+  background-color: #111; /* Dark background */
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.bg-contrast em {
+  color: #ccc;
+}
+
+.testimonial-text {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* The small photo of Patricia 
+   "my-3" is margin-y: 1rem
+*/
+.my-3 { margin-top: 1rem; margin-bottom: 1rem; }
+img[alt="Patricia Ellenwood"] {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* -------------------------
+   8. BLOG PREVIEW
+   ------------------------- */
+
+hr {
+  border: none;
+  height: 1px;
+  background: #ddd;
+  margin: 2rem auto;
+}
+
+.text-muted {
+  color: #888 !important;
+}
+
+/* A simple blog listing style */
+.blog-listing p { color: #555; }
+
+/* -------------------------
+   9. CTA / SCHEDULE CALL
+   ------------------------- */
+
+.cta-block {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 40px 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-block h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-block p {
+  margin-bottom: 1.5rem;
+}
+
+.cta-block .btn {
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+}
+
+/* -------------------------
+   10. FOOTER
+   (Based on the screenshot: 
+   3 or 4 columns, or some layout.)
+   ------------------------- */
+
+.site-footer {
+  background-color: #fdfdfd;
+  border-top: 2px solid #e0e0e0;
+  padding: 40px 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.site-footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.site-footer .footer-col {
+  flex: 1 1 200px;
+  min-width: 150px;
+}
+
+.site-footer h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.site-footer .subscribe-btn {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+.site-footer .logo-footer {
+  max-width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+}
+
+.site-footer .footer-bottom {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* For the small horizontal line 
+   if there's a top/bottom border needed
+   .site-footer::before or .footer-bottom::before 
+   could do that if you want an extra line
+*/
+
+/* 
+   -------------------------
+   11. Misc Sizing & Spacing
+   Adjust as needed to match the screenshot exactly
+   -------------------------
+*/
+
+section {
+  margin-bottom: 0; /* override if needed */
+}
+
+/* Extra top/bottom spacing for sections that need it */
+section.hero-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section.bg-light {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+section.bg-contrast {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Increase the heading size for the top hero */
+.hero-heading.mt-4 {
+  font-size: 2.2rem;
+}
+
+/* If you see that the top nav bar 
+   is bigger in WP, you can do:
+*/
+
+.site-header {
+  min-height: 70px;
+  padding: 1.2rem 2rem;
+}
+
+.site-header .top-nav a {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
