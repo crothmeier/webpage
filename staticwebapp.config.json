@@ -1,0 +1,14 @@
+{
+  // [COMMENT] Ensures client-side routes are handled if it’s a SPA (not strictly needed for a purely static site).
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/assets/*", "/images/*"]
+  },
+
+  // [COMMENT] Custom 404 override
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  }
+}
