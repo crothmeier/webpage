@@ -4,6 +4,8 @@
   COMMENTED CHANGES:
     [EDITED 1] Google Analytics
     [EDITED 2] Updated Author Bio
+    [EDITED 3] Added featured image block
+    [EDITED 4] Removed “mid-level” from main text content
 -->
 
 <!DOCTYPE html>
@@ -82,6 +84,16 @@
             By Christopher Rothmeier | April 11, 2025
           </div>
           
+          <!-- [EDITED 3] FEATURED IMAGE BLOCK -->
+          <div class="mb-4">
+            <img 
+              src="photos/gpu.jpeg"
+              alt="GPU Lab Implementation" 
+              class="img-fluid rounded"
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+          </div>
+          
           <!-- Blog Content -->
           <div class="blog-post-content">
             <p>
@@ -147,14 +159,15 @@
               on-prem might be a cost-effective solution. I’ve personally seen monthly 
               savings in the thousands by moving certain workloads off expensive cloud instances.
             </p>
+            <!-- [EDITED 4] REMOVED “mid-level” reference -->
             <p>
               From a career standpoint, mastering these configurations has helped me become 
-              more marketable—particularly for mid-level sysadmin roles emphasizing 
-              cost-efficiency. 
+              more marketable—particularly for sysadmin roles emphasizing cost-efficiency.
             </p>
           </div>
           
           <!-- [EDITED 2] AUTHOR BIO W/ LINKEDIN & JOB SEARCH NOTE -->
+          <!-- REMOVED references to mid-level and (capped at 75k) -->
           <div class="mt-5 p-4 bg-light rounded">
             <div class="d-flex align-items-center mb-3">
               <div>
@@ -163,8 +176,8 @@
                   Christopher Rothmeier runs Lazarus Laboratories Consulting, specializing 
                   in hybrid cloud and AI-focused infrastructure. He’s recently built an 
                   on-prem GPU lab to cut down on monthly cloud expenses—research that also 
-                  fuels his search for a mid-level sysadmin role (capped at 75k) in 
-                  Philadelphia. Connect on
+                  fuels his search for a sysadmin role in Philadelphia. 
+                  Connect on
                   <a 
                     href="https://www.linkedin.com/in/christopher-rothmeier"
                     target="_blank"
