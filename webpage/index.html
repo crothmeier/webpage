@@ -1,15 +1,3 @@
-<!-- 
-  FILE: index.html
-  --------------------------------------
-  COMMENTED CHANGES:
-    [EDITED 1] Google Analytics (GA4)
-    [EDITED 2] Local image paths update
-    [EDITED 3] Navbar links (including Blog link)
-    [EDITED 4] Updated "From the Lazarus Labs Blog" section 
-              to include preview images for each blog post.
-    [EDITED 5] Simple nav at top remains unchanged.
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lazarus Laboratories Consulting</title>
   
-  <!-- [EDITED 1] GOOGLE ANALYTICS (GA4) -->
+  <!-- GOOGLE ANALYTICS (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3XZ9E5JLY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -25,23 +13,20 @@
     gtag('js', new Date());
     gtag('config', 'G-L3XZ9E5JLY');
   </script>
-  <!-- END GA (GA4) SNIPPET -->
 
   <!-- Bootstrap 5 CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoK9gF2TBNhXg+vvFLC2NIDTq0EWr7syxANPZrscNmjV9H1" 
+    rel="stylesheet"
     crossorigin="anonymous"
   >
   
-  <!-- Main CSS (includes bounce effect) -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css" type="text/css">
-
 </head>
 <body>
 
-  <!-- [EDITED 5] SIMPLE NAVBAR -->
+  <!-- SIMPLE NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -50,16 +35,22 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" 
-              aria-expanded="false" aria-label="Toggle navigation">
+              aria-expanded="false" aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <!-- [EDITED 3] The Blog link assumes blog.html exists -->
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">LinkedIn</a>
+            <a 
+              class="nav-link" 
+              href="https://www.linkedin.com/in/christopher-rothmeier" 
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </li>
         </ul>
       </div>
@@ -70,11 +61,17 @@
   <!-- HERO SECTION -->
   <section class="hero-section fade-in-section">
     <div class="container text-center">
-      <!-- [EDITED 2] LOCAL IMAGE PATH -->
-      <img src="photos/lazlogo2-draft2.png" alt="Lazarus Laboratories Logo" style="max-width: 200px;">
-      <h1 class="hero-heading mt-4">Personalized, one-on-one managed IT services</h1>
+      <img 
+        src="photos/lazlogo2-draft2.png"
+        alt="Lazarus Laboratories Logo"
+        style="max-width: 200px;"
+      />
+      <h1 class="hero-heading mt-4">
+        Personalized, one-on-one managed IT services
+      </h1>
       <p class="hero-subtext">
-        Specializing in Managed IT Services, Secure Cloud Solutions, Cybersecurity, and Data Protection, designed personally for your growing business.
+        Specializing in Managed IT Services, Secure Cloud Solutions, Cybersecurity, and Data Protection,
+        designed personally for your growing business.
       </p>
       <div class="hero-button">
         <a href="#" class="btn btn-light">About us</a>
@@ -85,60 +82,229 @@
   <!-- PRACTICAL SOLUTIONS SECTION -->
   <section class="py-5 bg-light-gray fade-in-section">
     <div class="container">
-      <h2 class="text-center mb-3">Practical, tailored IT solutions focused on security, scalability, and driving real business efficiency.</h2>
+      <h2 class="text-center mb-3">
+        Practical, tailored IT solutions focused on security, scalability, and driving real business efficiency.
+      </h2>
       <p class="text-center mb-5">
         Offering strategic IT solutions designed to enhance security, scalability, and business efficiency.
       </p>
 
       <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-        <!-- Blog Post Preview: On-Prem GPU Lab: Real Cost Savings vs. Cloud AI Services -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 bounce-me">
-            <!-- Preview Image -->
-            <img src="photos/recycle.jpeg" alt="On-Prem GPU Lab: Cost Savings" class="card-img-top">
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
-              <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud AI Services</h3>
-              <p class="text-muted">April 11, 2025</p>
-              <p>
-                After years of implementing cloud and hybrid solutions for clients, I've spent the past year building and testing something different...
+              <h3 class="h5">Managed IT Services</h3>
+              <p class="mb-0">
+                Proactive maintenance, monitoring, and support tailored specifically to your business.
               </p>
-              <a href="blog-gpu-cost-savings.html" class="btn btn-sm btn-dark">Read More</a>
             </div>
           </div>
         </div>
-        <!-- Blog Post Preview: Building Your Own GPU Lab: Practical Lessons from My Homelab Experience -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 bounce-me">
-            <!-- Preview Image -->
-            <img src="photos/gpu.jpeg" alt="Building Your Own GPU Lab" class="card-img-top">
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
-              <h3 class="h5">Building Your Own GPU Lab: Practical Lessons from My Homelab Experience</h3>
-              <p class="text-muted">April 11, 2025</p>
-              <p>
-                Since my previous post on the cost benefits of on-premises GPU infrastructure, I've received several questions about my actual implementation...
+              <h3 class="h5">Cloud &amp; Hybrid Infrastructure</h3>
+              <p class="mb-0">
+                Efficient and scalable cloud environments, bridging on-premises systems and modern cloud solutions.
               </p>
-              <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark">Read More</a>
             </div>
           </div>
         </div>
-        <!-- Blog Post Preview: GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments in the 2025 AI Landscape -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 bounce-me">
-            <!-- Preview Image -->
-            <img src="photos/GPUInfra.PNG" alt="GPU Infrastructure Security" class="card-img-top">
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
-              <h3 class="h5">GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments in the 2025 AI Landscape</h3>
-              <p class="text-muted">April 11, 2025</p>
-              <p>
-                In 2025, as AI models evolve into integral components of business operations, securing the infrastructure that powers these systems has become more critical than ever...
+              <h3 class="h5">Cybersecurity Solutions</h3>
+              <p class="mb-0">
+                Advanced threat protection, security assessments, and proactive defenses to keep your data secure.
               </p>
-              <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark">Read More</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="text-center mt-3">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
+            <div class="card-body">
+              <h3 class="h5">Data Backup &amp; Recovery</h3>
+              <p class="mb-0">
+                Reliable, automated backup solutions ensuring rapid recovery and minimal downtime.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
+            <div class="card-body">
+              <h3 class="h5">Infrastructure Consulting</h3>
+              <p class="mb-0">
+                Expert analysis and guidance for optimizing your technology infrastructure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border-0 text-center h-100 bounce-me">
+            <div class="card-body">
+              <h3 class="h5">Personalized IT Support</h3>
+              <p class="mb-0">
+                Individualized, responsive technical support ensuring your systems run smoothly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE LAZARUS LABS -->
+  <section class="py-5 fade-in-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Choose Lazarus Laboratories?</h2>
+      <p class="text-center mb-5 mx-auto" style="max-width: 650px;">
+        Direct, personalized IT consulting designed to simplify your technology management 
+        and support your business goals.
+      </p>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <h3 class="mb-3">Your Trusted IT Partner</h3>
+          <ul class="list-unstyled">
+            <li>• Personalized, one-on-one technical support.</li>
+            <li>• Expertise in cloud and hybrid infrastructure management.</li>
+            <li>• Strategic cybersecurity solutions protecting your business.</li>
+            <li>• Reliable backup and rapid disaster recovery.</li>
+          </ul>
+        </div>
+        <div class="col-md-6 text-center">
+          <img 
+            src="photos/glasses.jpeg"
+            alt="Glasses / IT Symbolic" 
+            class="rounded-image"
+          />
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img 
+            src="photos/datacenter.jpeg"
+            alt="Datacenter / Cloud Infrastructure" 
+            class="rounded-image mb-4 mb-md-0"
+          />
+        </div>
+        <div class="col-md-6">
+          <h3 class="mb-3">Stay Informed &amp; Connected</h3>
+          <ul class="list-unstyled">
+            <li>• Insights into emerging IT trends and cybersecurity best practices.</li>
+            <li>• Real-world case studies showcasing successful IT solutions.</li>
+            <li>• Expert tips for optimizing your business technology.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL SECTION -->
+  <section class="py-5 bg-contrast fade-in-section">
+    <div class="container">
+      <p><em>During COVID-19 Pandemic, 2020</em></p>
+      <div class="row">
+        <div class="col-12 col-md-8 mx-auto text-center">
+          <p class="testimonial-text">
+            “Lazarus Laboratories Consulting was a game changer for CSI Crystalizations.
+            Before COVID, our systems were outdated and slowing us down, but they stepped in,
+            upgraded our network, and replaced our aging server. The improvements immediately
+            made everything faster, and our team could easily work from home when the pandemic hit.
+            Honestly, without their foresight, I'm not sure we would have made it.
+            They took care of everything tech-related so I could focus entirely on running the business.
+            I can’t recommend them highly enough.”
+          </p>
+          <div class="my-3">
+            <img 
+              src="photos/pat.jpg"
+              alt="Patricia Ellenwood" 
+              style="width: 60px; height: 60px; border-radius: 100px; object-fit: cover;"
+            />
+          </div>
+          <p class="mb-0">Patricia Ellenwood</p>
+          <p class="text-white-50" style="font-weight:300;">
+            President, CSI Crystalizations Systems, Inc.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW SECTION (UPDATED IMAGES) -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-4">From the Lazarus Labs Blog</h2>
+      <div class="row g-4">
+        <!-- 1) GPU Infrastructure Security -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/GPUInfra.png" 
+              class="card-img-top blog-card-image" 
+              alt="GPU Security Infrastructure" 
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
+              <p class="text-muted"><small>April 11, 2025</small></p>
+              <p class="flex-grow-1">
+                In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
+                Learn security best practices for modern AI systems.
+              </p>
+              <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 2) Building Your Own GPU Lab -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="GPU Lab Implementation" 
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
+              <p class="text-muted"><small>April 11, 2025</small></p>
+              <p class="flex-grow-1">
+                Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
+              </p>
+              <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 3) On-Prem GPU Lab: Real Cost Savings vs Cloud -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/recycle.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="Cost Benefits Analysis" 
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
+              <p class="text-muted"><small>April 11, 2025</small></p>
+              <p class="flex-grow-1">
+                After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
+                over cloud AI services.
+              </p>
+              <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
         <a href="blog.html" class="btn btn-outline-dark">View All Posts</a>
       </div>
     </div>
@@ -151,7 +317,12 @@
         <h2 class="text-center mb-3">Schedule a Strategy Call</h2>
         <p class="text-center mb-4">Get personalized IT solutions for your enterprise</p>
         <div class="text-center">
-          <a href="mailto:crothmeier@lazarus-labs.com" class="btn btn-primary">Schedule Now</a>
+          <a 
+            href="mailto:crothmeier@lazarus-labs.com" 
+            class="btn btn-primary"
+          >
+            Schedule Now
+          </a>
         </div>
       </div>
     </div>
@@ -161,7 +332,9 @@
   <footer class="bg-light py-4 mt-5">
     <div class="container text-center">
       <p class="mb-0">© 2025 Lazarus Laboratories, LLC | 
-        <a href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">Connect on LinkedIn</a>
+        <a href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">
+          Connect on LinkedIn
+        </a>
       </p>
       <p class="mb-0">
         <small>Philadelphia, PA | Seeking Mid-Level Sysadmin Roles</small>
@@ -170,11 +343,11 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-          integrity="sha384-kenU1KFdBIe4zVF0sG1M5b4hcpxyD9F7jL+Y1N3neuXKRA+7sbeNqURy9B6+fzT" 
-          crossorigin="anonymous"></script>
-
-  <!-- Intersection Observer script to fade in .fade-in-section elements -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    crossorigin="anonymous">
+  </script>
+  <!-- Intersection Observer fade-in script (unchanged) -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const observer = new IntersectionObserver((entries) => {
@@ -185,6 +358,7 @@
           }
         });
       }, { threshold: 0.1 });
+
       document.querySelectorAll('.fade-in-section').forEach((elem) => {
         observer.observe(elem);
       });
