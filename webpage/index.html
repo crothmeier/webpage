@@ -1,55 +1,102 @@
+<!-- 
+  FILE: index.html
+  --------------------------------------
+  COMMENTED CHANGES:
+    [EDITED 1] Google Analytics (GA4)
+    [EDITED 2] Local image paths
+    [EDITED 3] LinkedIn link in navbar
+    [EDITED 4] Minor text adjustments
+    [EDITED 5] Simple nav at top
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lazarus Laboratories Consulting</title>
+  
+  <!-- [EDITED 1] GOOGLE ANALYTICS (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3XZ9E5JLY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L3XZ9E5JLY');
+  </script>
+  <!-- END GA (GA4) SNIPPET -->
 
-  <!-- Bootstrap 5 CSS (CDN) -->
+  <!-- Bootstrap 5 CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
     rel="stylesheet" 
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoK9gF2TBNhXg+vvFLC2NIDTq0EWr7syxANPZrscNmjV9H1" 
     crossorigin="anonymous"
-  />
-
-  <!-- Your External CSS (updated with animations) -->
-  <link 
-    rel="stylesheet" 
-    href="styles.css" 
-    type="text/css"
   >
-</head>
+  
+  <!-- Main CSS (includes bounce effect) -->
+  <link rel="stylesheet" href="styles.css" type="text/css">
 
+</head>
 <body>
 
-  <!-- HERO SECTION (added 'fade-in-section' class) -->
-  <section class="hero-section fade-in-section"><!-- [ADDED CLASS fade-in-section FOR SCROLL ANIMATION] -->
+  <!-- [EDITED 5] SIMPLE NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="photos/lazlogo2-draft2.png" alt="Lazarus Labs" height="30" class="me-2">
+        <span>Lazarus Labs</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <!-- [EDITED 3] LINKEDIN LINK -->
+          <li class="nav-item">
+            <a 
+              class="nav-link" 
+              href="https://www.linkedin.com/in/christopher-rothmeier" 
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <!-- HERO SECTION -->
+  <section class="hero-section fade-in-section">
     <div class="container text-center">
-      <!-- Logo -->
+      <!-- [EDITED 2] LOCAL IMAGE PATH -->
       <img 
-        src="https://crothmeier.wordpress.com/wp-content/uploads/2025/03/lazlogo2-draft2.png"
+        src="photos/lazlogo2-draft2.png"
         alt="Lazarus Laboratories Logo"
         style="max-width: 200px;"
       />
-      <!-- Main Heading -->
       <h1 class="hero-heading mt-4">
         Personalized, one-on-one managed IT services
       </h1>
-      <!-- Subtext/Paragraph -->
       <p class="hero-subtext">
         Specializing in Managed IT Services, Secure Cloud Solutions, Cybersecurity, and Data Protection,
         designed personally for your growing business.
       </p>
-      <!-- 'About Us' Button -->
       <div class="hero-button">
         <a href="#" class="btn btn-light">About us</a>
       </div>
     </div>
   </section>
 
-  <!-- PRACTICAL SOLUTIONS SECTION (added 'fade-in-section') -->
-  <section class="py-5 bg-light-gray fade-in-section"><!-- [ADDED CLASS] -->
+  <!-- PRACTICAL SOLUTIONS SECTION -->
+  <section class="py-5 bg-light-gray fade-in-section">
     <div class="container">
       <h2 class="text-center mb-3">
         Practical, tailored IT solutions focused on security, scalability, and driving real business efficiency.
@@ -58,10 +105,9 @@
         Offering strategic IT solutions designed to enhance security, scalability, and business efficiency.
       </p>
 
-      <!-- 1st Row of 3 Columns -->
       <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Managed IT Services</h3>
               <p class="mb-0">
@@ -71,7 +117,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Cloud &amp; Hybrid Infrastructure</h3>
               <p class="mb-0">
@@ -81,7 +127,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Cybersecurity Solutions</h3>
               <p class="mb-0">
@@ -92,10 +138,9 @@
         </div>
       </div>
 
-      <!-- 2nd Row of 3 Columns -->
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Data Backup &amp; Recovery</h3>
               <p class="mb-0">
@@ -105,7 +150,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Infrastructure Consulting</h3>
               <p class="mb-0">
@@ -115,7 +160,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100">
+          <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
               <h3 class="h5">Personalized IT Support</h3>
               <p class="mb-0">
@@ -128,8 +173,8 @@
     </div>
   </section>
 
-  <!-- WHY CHOOSE LAZARUS LABS (added 'fade-in-section') -->
-  <section class="py-5 fade-in-section"><!-- [ADDED CLASS] -->
+  <!-- WHY CHOOSE LAZARUS LABS -->
+  <section class="py-5 fade-in-section">
     <div class="container">
       <h2 class="text-center mb-4">Why Choose Lazarus Laboratories?</h2>
       <p class="text-center mb-5 mx-auto" style="max-width: 650px;">
@@ -137,7 +182,6 @@
         and support your business goals.
       </p>
 
-      <!-- Row 1: Left text, Right image -->
       <div class="row align-items-center mb-5">
         <div class="col-md-6">
           <h3 class="mb-3">Your Trusted IT Partner</h3>
@@ -149,19 +193,20 @@
           </ul>
         </div>
         <div class="col-md-6 text-center">
+          <!-- [EDITED 2] LOCAL PATH -->
           <img 
-            src="https://crothmeier.wordpress.com/wp-content/uploads/2025/03/glasses.jpeg?w=1024" 
+            src="photos/glasses.jpeg"
             alt="Glasses / IT Symbolic" 
             class="rounded-image"
           />
         </div>
       </div>
 
-      <!-- Row 2: Left image, Right text -->
       <div class="row align-items-center">
         <div class="col-md-6 text-center">
+          <!-- [EDITED 2] LOCAL PATH -->
           <img 
-            src="https://crothmeier.wordpress.com/wp-content/uploads/2025/03/datacenter.jpeg?w=1024" 
+            src="photos/datacenter.jpeg"
             alt="Datacenter / Cloud Infrastructure" 
             class="rounded-image mb-4 mb-md-0"
           />
@@ -178,8 +223,8 @@
     </div>
   </section>
 
-  <!-- TESTIMONIAL SECTION (added 'fade-in-section') -->
-  <section class="py-5 bg-contrast fade-in-section"><!-- [ADDED CLASS] -->
+  <!-- TESTIMONIAL SECTION -->
+  <section class="py-5 bg-contrast fade-in-section">
     <div class="container">
       <p><em>During COVID-19 Pandemic, 2020</em></p>
       <div class="row">
@@ -193,10 +238,10 @@
             They took care of everything tech-related so I could focus entirely on running the business.
             I can’t recommend them highly enough.”
           </p>
-          <!-- Client photo -->
+          <!-- [EDITED 2] LOCAL PATH -->
           <div class="my-3">
             <img 
-              src="https://crothmeier.wordpress.com/wp-content/uploads/2025/03/pat.jpg?w=120" 
+              src="photos/pat.jpg"
               alt="Patricia Ellenwood" 
               style="width: 60px; height: 60px; border-radius: 100px; object-fit: cover;"
             />
@@ -210,24 +255,44 @@
     </div>
   </section>
 
-  <!-- BLOG PREVIEW (No posts found) - fade-in-section optional, add if needed -->
+  <!-- BLOG PREVIEW -->
   <section class="py-5">
     <div class="container">
       <h2 class="mb-4">From the Lazarus Labs Blog</h2>
-      <hr />
-      <p class="text-muted">No posts were found.</p>
+      <div class="row">
+        <!-- Link to the new Blog Post pages if desired -->
+        <div class="col-md-6 mb-4">
+          <h3 class="h5">Why I Built an On-Prem GPU Lab: Real Cost Savings vs. Cloud AI Services</h3>
+          <p class="text-muted">April 11, 2025</p>
+          <p>
+            After years of implementing cloud and hybrid solutions for clients, I've spent the past year building and testing something different...
+          </p>
+          <a href="blog-gpu-cost-savings.html" class="btn btn-sm btn-dark">Read More</a>
+        </div>
+        <div class="col-md-6 mb-4">
+          <h3 class="h5">Building Your Own GPU Lab: Practical Lessons from My Homelab Experience</h3>
+          <p class="text-muted">April 11, 2025</p>
+          <p>
+            Since my previous post on the cost benefits of on-premises GPU infrastructure, I've received several questions about my actual implementation...
+          </p>
+          <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark">Read More</a>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="blog.html" class="btn btn-outline-dark">View All Posts</a>
+      </div>
     </div>
   </section>
 
-  <!-- CTA / SCHEDULE CALL SECTION (added 'fade-in-section') -->
-  <section class="py-5 fade-in-section"><!-- [ADDED CLASS] -->
+  <!-- CTA / SCHEDULE CALL SECTION -->
+  <section class="py-5 fade-in-section">
     <div class="container">
       <div class="cta-block mx-auto">
         <h2 class="text-center mb-3">Schedule a Strategy Call</h2>
         <p class="text-center mb-4">Get personalized IT solutions for your enterprise</p>
         <div class="text-center">
           <a 
-            href="mailto:support@lazarus-labs.com" 
+            href="mailto:crothmeier@lazarus-labs.com" 
             class="btn btn-primary"
           >
             Schedule Now
@@ -237,26 +302,39 @@
     </div>
   </section>
 
-  <!-- Optionally add Bootstrap JS if you need interactive components -->
+  <!-- FOOTER -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Lazarus Laboratories, LLC | 
+        <a href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">
+          Connect on LinkedIn
+        </a>
+      </p>
+      <p class="mb-0">
+        <small>Philadelphia, PA | Seeking Mid-Level Sysadmin Roles</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+Y1N3neuXKRA+7sbeNqURy9B6+fzT" 
-    crossorigin="anonymous"
-  ></script>
+    integrity="sha384-kenU1KFdBIe4zVF0sG1M5b4hcpxyD9F7jL+Y1N3neuXKRA+7sbeNqURy9B6+fzT" 
+    crossorigin="anonymous">
+  </script>
 
-  <!-- [ADDED] Intersection Observer script to fade in .fade-in-section elements -->
+  <!-- Intersection Observer script to fade in .fade-in-section elements -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible'); // trigger fade-in
-            observer.unobserve(entry.target);         // stop observing once visible
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.1 });
 
-      // Observe all elements with .fade-in-section
       document.querySelectorAll('.fade-in-section').forEach((elem) => {
         observer.observe(elem);
       });
