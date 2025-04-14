@@ -3,6 +3,7 @@
   COMMENTED CHANGES:
     [EDITED A] Bounce effect for .bounce-me
     [ADDED B] Code block styling for technical blog posts
+    [ADDED C] Featured post and carousel styling for blog display
 */
 
 /* -------------------------
@@ -235,6 +236,66 @@ code:not(pre code) {
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
+/* [ADDED C] Featured Post Styling */
+.featured-post {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.featured-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.featured-post .featured-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-post-badge .badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* [ADDED C] Carousel Customization */
+.carousel-item {
+  padding: 1rem 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 1rem;
+  background-size: 50%;
+}
+
+.carousel-indicators {
+  bottom: -10px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #999;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  background-color: #333;
+  opacity: 1;
+}
+
 /* -------------------------
    5. FOOTER
    ------------------------- */
@@ -326,5 +387,10 @@ footer a:hover {
   
   pre code {
     padding: 0.5rem;
+  }
+  
+  /* [ADDED C] Featured post image height on mobile */
+  .featured-post .featured-image {
+    height: 200px;
   }
 }

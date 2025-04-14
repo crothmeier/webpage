@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- [NEW] Added meta description for SEO -->
+  <meta name="description" content="Technical insights on GPU infrastructure, on-premises deployments, and AI technology from Lazarus Labs Consulting." />
+  <title>Blog | Lazarus Laboratories Consulting</title>
+  
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3XZ9E5JLY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L3XZ9E5JLY');
+  </script>
+
+  <!-- Bootstrap 5 CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+  <!-- Simple Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="photos/lazlogo2-draft2.png" alt="Lazarus Labs" height="30" class="me-2">
+        <span>Lazarus Labs</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <!-- Mark blog as active -->
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item">
+            <a 
+              class="nav-link" 
+              href="https://www.linkedin.com/in/christopher-rothmeier" 
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- [NEW] Blog Header Section -->
+  <section class="py-5 bg-light">
+    <div class="container text-center">
+      <h1 class="mb-3">Lazarus Labs Blog</h1>
+      <p class="lead mb-0 text-muted">Technical insights, case studies, and practical solutions for your IT infrastructure</p>
+    </div>
+  </section>
+  
+  <!-- Main Blog Index Content (UPDATED WITH NEW CHATBOT BLOG) -->
+  <section class="py-5 blog-index">
+    <div class="container">
+      <div class="row g-4">
+        <!-- NEWLY ADDED: Card for Artificial Emotional Intelligence Chatbot -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="AI Chatbot with Emotional Intelligence"
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 12, 2025</small>
+              </div>
+              <h2 class="h5 card-title">Building an Artificial Emotional Intelligence (AEI) Chatbot</h2>
+              <p class="card-text flex-grow-1">
+                Learn how to build an emotionally intelligent chatbot with real-time emotion detection, 
+                adaptive responses, and ethical considerations for internal deployment.
+              </p>
+              <a href="chatbot-blog.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 1: GPU Infrastructure Security -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/GPUInfra.png" 
+              class="card-img-top blog-card-image" 
+              alt="GPU Security Infrastructure"
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 11, 2025</small>
+              </div>
+              <h2 class="h5 card-title">GPU Infrastructure Security: Best Practices</h2>
+              <p class="card-text flex-grow-1">
+                In today's AI-driven world, GPU deployments have evolved from mere tools to integral components of business operations. 
+                This post explores GPU security best practices through the lens of current AI/ML trends.
+              </p>
+              <a href="blog-gpu-security-2025.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 2: Building Your Own GPU Lab -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="GPU Lab Implementation"
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 11, 2025</small>
+              </div>
+              <h2 class="h5 card-title">Building Your Own GPU Lab: Practical Lessons</h2>
+              <p class="card-text flex-grow-1">
+                Since my post on the cost benefits of on-premises GPU infrastructure, I've received several questions about implementation. 
+                Learn from my hands-on experience building a GPU lab.
+              </p>
+              <a href="blog-gpu-implementation.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Card 3: On-Prem GPU Lab: Real Cost Savings vs. Cloud -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/recycle.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="Cost Benefit Analysis"
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 11, 2025</small>
+              </div>
+              <h2 class="h5 card-title">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h2>
+              <p class="card-text flex-grow-1">
+                After years of implementing cloud and hybrid solutions for clients, I've built something different: 
+                an on-premises GPU lab that's delivering real cost benefits over cloud AI services.
+              </p>
+              <a href="blog-gpu-cost.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Subscribe Section (optional) -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h3 class="mb-4">Subscribe for Updates</h3>
+          <p class="mb-4">Get the latest technical insights and case studies delivered straight to your inbox.</p>
+          <form class="row g-3 justify-content-center">
+            <div class="col-8">
+              <input type="email" class="form-control" placeholder="Your email address">
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-light py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 Lazarus Laboratories, LLC | 
+        <a href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">
+          Connect on LinkedIn
+        </a>
+      </p>
+      <!-- Updated to match other pages: Removed "Mid-Level" -->
+      <p class="mb-0">
+        <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+</body>
+</html>
