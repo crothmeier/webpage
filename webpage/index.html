@@ -242,6 +242,7 @@
       <h2 class="mb-4">From the Lazarus Labs Blog</h2>
       
       <!-- Desktop Layout (Featured + Grid) -->
+      <!-- [EDIT START]: Updated featured post to VMware/Proxmox migration blog -->
       <div class="d-none d-md-block">
         <!-- Featured Post (Newest) -->
         <div class="row mb-5">
@@ -250,11 +251,11 @@
               <div class="row g-0">
                 <div class="col-md-5">
                   <img 
-                    src="photos/chatbot.jpeg" 
+                    src="photos/linux.jpeg" 
                     class="img-fluid rounded-start h-100 w-100 featured-image" 
                     style="object-fit: cover;" 
-                    alt="AI Chatbot with Emotional Intelligence" 
-                    onerror="this.src='photos/glasses.jpeg';"
+                    alt="VMware to Proxmox Migration" 
+                    onerror="this.src='photos/datacenter.jpeg';"
                   >
                 </div>
                 <div class="col-md-7">
@@ -262,12 +263,12 @@
                     <div class="featured-post-badge mb-2">
                       <span class="badge bg-primary">New</span>
                     </div>
-                    <h3 class="h4 card-title">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
-                    <p class="text-muted"><small>April 12, 2025</small></p>
+                    <h3 class="h4 card-title">The Great Escape: Migrating from VMware to Proxmox/KVM in 2025</h3>
+                    <p class="text-muted"><small>May 10, 2025</small></p>
                     <p class="card-text flex-grow-1">
-                      The intersection of artificial intelligence and emotional understanding represents one of the most fascinating frontiers in modern computing. Learn how to build an emotionally intelligent chatbot with real-time emotion detection, adaptive responses, and ethical considerations for internal deployment.
+                      The Broadcom acquisition of VMware has dramatically changed the virtualization landscape, triggering an unprecedented migration wave toward open-source alternatives. This technical analysis explores all aspects of moving from VMware to Proxmox/KVM, with special focus on GPU workloads, security implications, and practical migration strategies.
                     </p>
-                    <a href="chatbot-blog.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
+                    <a href="blogvmware.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
                   </div>
                 </div>
               </div>
@@ -277,7 +278,27 @@
         
         <!-- Other Posts Grid -->
         <div class="row g-4">
-          <!-- 1) GPU Infrastructure Security -->
+          <!-- 1) Chatbot (Previously Featured) -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="photos/chatbot.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="AI Chatbot with Emotional Intelligence" 
+                onerror="this.src='photos/glasses.jpeg';"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
+                <p class="text-muted"><small>April 12, 2025</small></p>
+                <p class="flex-grow-1">
+                  Learn how to build an emotionally intelligent chatbot with real-time emotion detection and adaptive responses.
+                </p>
+                <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2) GPU Infrastructure Security -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img 
@@ -298,7 +319,7 @@
             </div>
           </div>
           
-          <!-- 2) Building Your Own GPU Lab -->
+          <!-- 3) Building Your Own GPU Lab -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img 
@@ -317,31 +338,12 @@
               </div>
             </div>
           </div>
-          
-          <!-- 3) On-Prem GPU Lab: Real Cost Savings vs Cloud -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img 
-                src="photos/recycle.jpeg" 
-                class="card-img-top blog-card-image" 
-                alt="Cost Benefits Analysis" 
-                onerror="this.src='photos/glasses.jpeg';"
-              >
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
-                <p class="text-muted"><small>April 11, 2025</small></p>
-                <p class="flex-grow-1">
-                  After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
-                  over cloud AI services.
-                </p>
-                <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
+      <!-- [EDIT END]: Updated featured post -->
       
       <!-- Mobile Layout (Carousel) -->
+      <!-- [EDIT START]: Updated mobile carousel with VMware/Proxmox migration blog -->
       <div class="d-md-none">
         <!-- Carousel Component -->
         <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -355,8 +357,29 @@
           
           <!-- Carousel Items -->
           <div class="carousel-inner">
-            <!-- Slide 1: Chatbot Blog (Newest) -->
+            <!-- Slide 1: VMware to Proxmox Migration (Newest) -->
             <div class="carousel-item active">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/linux.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="VMware to Proxmox Migration" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-primary mb-2">New</span>
+                  <h3 class="h5">The Great Escape: Migrating from VMware to Proxmox/KVM</h3>
+                  <p class="text-muted"><small>May 10, 2025</small></p>
+                  <p class="flex-grow-1">
+                    Explore practical strategies for migrating from VMware to Proxmox/KVM following the Broadcom acquisition.
+                  </p>
+                  <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2: Chatbot Blog (Previously Featured) -->
+            <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
                   src="photos/chatbot.jpeg" 
@@ -365,18 +388,17 @@
                   onerror="this.src='photos/glasses.jpeg';"
                 >
                 <div class="card-body d-flex flex-column">
-                  <span class="badge bg-primary mb-2">New</span>
                   <h3 class="h5">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
                   <p class="text-muted"><small>April 12, 2025</small></p>
                   <p class="flex-grow-1">
-                    Learn how to build an emotionally intelligent chatbot with real-time emotion detection and ethical considerations for internal deployment.
+                    Learn how to build an emotionally intelligent chatbot with real-time emotion detection and ethical considerations.
                   </p>
                   <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
                 </div>
               </div>
             </div>
             
-            <!-- Slide 2: GPU Infrastructure Security -->
+            <!-- Slide 3: GPU Infrastructure Security -->
             <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
@@ -397,7 +419,7 @@
               </div>
             </div>
             
-            <!-- Slide 3: Building Your Own GPU Lab -->
+            <!-- Slide 4: Building Your Own GPU Lab -->
             <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
@@ -416,27 +438,6 @@
                 </div>
               </div>
             </div>
-            
-            <!-- Slide 4: On-Prem GPU Lab Cost Savings -->
-            <div class="carousel-item">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/recycle.jpeg" 
-                  class="card-img-top blog-card-image" 
-                  alt="Cost Benefits Analysis" 
-                  onerror="this.src='photos/glasses.jpeg';"
-                >
-                <div class="card-body d-flex flex-column">
-                  <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
-                  <p class="text-muted"><small>April 11, 2025</small></p>
-                  <p class="flex-grow-1">
-                    After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
-                    over cloud AI services.
-                  </p>
-                  <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
-                </div>
-              </div>
-            </div>
           </div>
           
           <!-- Carousel Controls -->
@@ -450,6 +451,7 @@
           </button>
         </div>
       </div>
+      <!-- [EDIT END]: Updated mobile carousel -->
       
       <!-- View All Posts Button -->
       <div class="text-center mt-4">
@@ -486,7 +488,6 @@
       </p>
       <p class="mb-0">
         <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
-        <!-- CORRECTED: Removed "Mid-Level" to standardize footer content across all pages -->
       </p>
     </div>
   </footer>
