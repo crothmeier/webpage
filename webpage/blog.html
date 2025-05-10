@@ -65,10 +65,79 @@
     </div>
   </section>
   
-  <!-- Main Blog Index Content (UPDATED IMAGES) -->
+  <!-- Main Blog Index Content (UPDATED WITH ALL BLOG POSTS) -->
   <section class="py-5 blog-index">
     <div class="container">
       <div class="row g-4">
+        <!-- NEWLY ADDED: Card for Artificial Emotional Intelligence Chatbot -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="AI Chatbot with Emotional Intelligence"
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 12, 2025</small>
+              </div>
+              <h2 class="h5 card-title">Building an Artificial Emotional Intelligence (AEI) Chatbot</h2>
+              <p class="card-text flex-grow-1">
+                Learn how to build an emotionally intelligent chatbot with real-time emotion detection, 
+                adaptive responses, and ethical considerations for internal deployment.
+              </p>
+              <a href="chatbot-blog.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ADDED: Neuromorphic Computing Blog Post -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="Neuromorphic Computing for Edge AI"
+              onerror="this.src='photos/glasses.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 18, 2025</small>
+              </div>
+              <h2 class="h5 card-title">Neuromorphic Computing for Edge AI</h2>
+              <p class="card-text flex-grow-1">
+                Explore how neuromorphic computing is revolutionizing edge AI deployments with energy-efficient, 
+                brain-inspired architectures for on-premises infrastructure.
+              </p>
+              <a href="blog3.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ADDED: GPU Virtualization Blog Post -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/gpu.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="GPU Virtualization vs. PCIe Passthrough"
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>April 26, 2025</small>
+              </div>
+              <h2 class="h5 card-title">GPU Virtualization vs. PCIe Passthrough</h2>
+              <p class="card-text flex-grow-1">
+                Navigate the choice between GPU virtualization and PCIe passthrough for AI workloads with our practical guide 
+                comparing performance impact, licensing costs, and management considerations.
+              </p>
+              <a href="blog4.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        
         <!-- Card 1: GPU Infrastructure Security -->
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
@@ -134,6 +203,7 @@
                 an on-premises GPU lab that's delivering real cost benefits over cloud AI services.
               </p>
               <a href="blog-gpu-cost.html" class="btn btn-dark mt-3">Read Article</a>
+              <!-- CORRECTED: Fixed link from blog-gpu-cost.html.html to blog-gpu-cost.html -->
             </div>
           </div>
         </div>
@@ -170,7 +240,8 @@
         </a>
       </p>
       <p class="mb-0">
-        <small>Philadelphia, PA | Seeking Mid-Level Sysadmin Roles</small>
+        <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
+        <!-- CORRECTED: Removed "Mid-Level" to standardize footer content across all pages -->
       </p>
     </div>
   </footer>

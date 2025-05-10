@@ -212,13 +212,13 @@
       <div class="row">
         <div class="col-12 col-md-8 mx-auto text-center">
           <p class="testimonial-text">
-            “Lazarus Laboratories Consulting was a game changer for CSI Crystalizations.
+            "Lazarus Laboratories Consulting was a game changer for CSI Crystalizations.
             Before COVID, our systems were outdated and slowing us down, but they stepped in,
             upgraded our network, and replaced our aging server. The improvements immediately
             made everything faster, and our team could easily work from home when the pandemic hit.
             Honestly, without their foresight, I'm not sure we would have made it.
             They took care of everything tech-related so I could focus entirely on running the business.
-            I can’t recommend them highly enough.”
+            I can't recommend them highly enough."
           </p>
           <div class="my-3">
             <img 
@@ -236,74 +236,224 @@
     </div>
   </section>
 
-  <!-- BLOG PREVIEW SECTION (UPDATED IMAGES) -->
+  <!-- BLOG PREVIEW SECTION - MODIFIED FOR RESPONSIVE LAYOUT -->
   <section class="py-5">
     <div class="container">
       <h2 class="mb-4">From the Lazarus Labs Blog</h2>
-      <div class="row g-4">
-        <!-- 1) GPU Infrastructure Security -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/GPUInfra.png" 
-              class="card-img-top blog-card-image" 
-              alt="GPU Security Infrastructure" 
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
-            <div class="card-body d-flex flex-column">
-              <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
-              <p class="text-muted"><small>April 11, 2025</small></p>
-              <p class="flex-grow-1">
-                In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
-                Learn security best practices for modern AI systems.
-              </p>
-              <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+      
+      <!-- Desktop Layout (Featured + Grid) -->
+      <div class="d-none d-md-block">
+        <!-- Featured Post (Newest) -->
+        <div class="row mb-5">
+          <div class="col-12">
+            <div class="card shadow-sm featured-post">
+              <div class="row g-0">
+                <div class="col-md-5">
+                  <img 
+                    src="photos/gpu.jpeg" 
+                    class="img-fluid rounded-start h-100 w-100 featured-image" 
+                    style="object-fit: cover;" 
+                    alt="AI Chatbot with Emotional Intelligence" 
+                    onerror="this.src='photos/glasses.jpeg';"
+                  >
+                </div>
+                <div class="col-md-7">
+                  <div class="card-body d-flex flex-column h-100">
+                    <div class="featured-post-badge mb-2">
+                      <span class="badge bg-primary">New</span>
+                    </div>
+                    <h3 class="h4 card-title">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
+                    <p class="text-muted"><small>April 12, 2025</small></p>
+                    <p class="card-text flex-grow-1">
+                      The intersection of artificial intelligence and emotional understanding represents one of the most fascinating frontiers in modern computing. Learn how to build an emotionally intelligent chatbot with real-time emotion detection, adaptive responses, and ethical considerations for internal deployment.
+                    </p>
+                    <a href="chatbot-blog.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         
-        <!-- 2) Building Your Own GPU Lab -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/gpu.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="GPU Lab Implementation" 
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
-            <div class="card-body d-flex flex-column">
-              <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
-              <p class="text-muted"><small>April 11, 2025</small></p>
-              <p class="flex-grow-1">
-                Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
-              </p>
-              <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+        <!-- Other Posts Grid -->
+        <div class="row g-4">
+          <!-- 1) GPU Infrastructure Security -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="photos/GPUInfra.png" 
+                class="card-img-top blog-card-image" 
+                alt="GPU Security Infrastructure" 
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
+                <p class="text-muted"><small>April 11, 2025</small></p>
+                <p class="flex-grow-1">
+                  In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
+                  Learn security best practices for modern AI systems.
+                </p>
+                <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+              </div>
             </div>
           </div>
-        </div>
-        
-        <!-- 3) On-Prem GPU Lab: Real Cost Savings vs Cloud -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/recycle.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="Cost Benefits Analysis" 
-              onerror="this.src='photos/glasses.jpeg';"
-            >
-            <div class="card-body d-flex flex-column">
-              <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
-              <p class="text-muted"><small>April 11, 2025</small></p>
-              <p class="flex-grow-1">
-                After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
-                over cloud AI services.
-              </p>
-              <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+          
+          <!-- 2) Building Your Own GPU Lab -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="photos/gpu.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="GPU Lab Implementation" 
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
+                <p class="text-muted"><small>April 11, 2025</small></p>
+                <p class="flex-grow-1">
+                  Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
+                </p>
+                <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 3) On-Prem GPU Lab: Real Cost Savings vs Cloud -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="photos/recycle.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="Cost Benefits Analysis" 
+                onerror="this.src='photos/glasses.jpeg';"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
+                <p class="text-muted"><small>April 11, 2025</small></p>
+                <p class="flex-grow-1">
+                  After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
+                  over cloud AI services.
+                </p>
+                <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                <!-- CORRECTED: Fixed the filename from blog-gpu-cost.html.html to blog-gpu-cost.html -->
+              </div>
             </div>
           </div>
         </div>
       </div>
       
+      <!-- Mobile Layout (Carousel) -->
+      <div class="d-md-none">
+        <!-- Carousel Component -->
+        <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+          <!-- Carousel Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#blogCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Slide 1: Chatbot Blog (Newest) -->
+            <div class="carousel-item active">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/gpu.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="AI Chatbot with Emotional Intelligence" 
+                  onerror="this.src='photos/glasses.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-primary mb-2">New</span>
+                  <h3 class="h5">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
+                  <p class="text-muted"><small>April 12, 2025</small></p>
+                  <p class="flex-grow-1">
+                    Learn how to build an emotionally intelligent chatbot with real-time emotion detection and ethical considerations for internal deployment.
+                  </p>
+                  <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2: GPU Infrastructure Security -->
+            <div class="carousel-item">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/GPUInfra.png" 
+                  class="card-img-top blog-card-image" 
+                  alt="GPU Security Infrastructure" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
+                  <p class="text-muted"><small>April 11, 2025</small></p>
+                  <p class="flex-grow-1">
+                    In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
+                    Learn security best practices for modern AI systems.
+                  </p>
+                  <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 3: Building Your Own GPU Lab -->
+            <div class="carousel-item">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/gpu.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="GPU Lab Implementation" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
+                  <p class="text-muted"><small>April 11, 2025</small></p>
+                  <p class="flex-grow-1">
+                    Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
+                  </p>
+                  <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 4: On-Prem GPU Lab Cost Savings -->
+            <div class="carousel-item">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/recycle.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="Cost Benefits Analysis" 
+                  onerror="this.src='photos/glasses.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <h3 class="h5">On-Prem GPU Lab: Real Cost Savings vs. Cloud</h3>
+                  <p class="text-muted"><small>April 11, 2025</small></p>
+                  <p class="flex-grow-1">
+                    After years of cloud implementations, see how my on-premises GPU lab delivers substantial cost benefits 
+                    over cloud AI services.
+                  </p>
+                  <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                  <!-- CORRECTED: Fixed the filename from blog-gpu-cost.html.html to blog-gpu-cost.html -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      <!-- View All Posts Button -->
       <div class="text-center mt-4">
         <a href="blog.html" class="btn btn-outline-dark">View All Posts</a>
       </div>
@@ -337,7 +487,8 @@
         </a>
       </p>
       <p class="mb-0">
-        <small>Philadelphia, PA | Seeking Mid-Level Sysadmin Roles</small>
+        <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
+        <!-- CORRECTED: Removed "Mid-Level" to standardize footer content across all pages -->
       </p>
     </div>
   </footer>
