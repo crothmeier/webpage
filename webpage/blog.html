@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- [NEW] Added meta description for SEO -->
+  <!-- [UNCHANGED] Meta description for SEO -->
   <meta name="description" content="Technical insights on GPU infrastructure, on-premises deployments, and AI technology from Lazarus Labs Consulting." />
   <title>Blog | Lazarus Laboratories Consulting</title>
   
@@ -57,7 +57,7 @@
     </div>
   </nav>
   
-  <!-- [NEW] Blog Header Section -->
+  <!-- [UNCHANGED] Blog Header Section -->
   <section class="py-5 bg-light">
     <div class="container text-center">
       <h1 class="mb-3">Lazarus Labs Blog</h1>
@@ -65,12 +65,35 @@
     </div>
   </section>
   
-  <!-- Main Blog Index Content -->
+  <!-- Main Blog Index Content (UPDATED WITH NEW HEALTHCARE SECURITY BLOG) -->
   <section class="py-5 blog-index">
     <div class="container">
-      <!-- [EDIT START]: Added VMware to Proxmox/KVM blog post at top -->
       <div class="row g-4">
-        <!-- NEWLY ADDED: VMware to Proxmox Migration Post -->
+        <!-- [EDIT START]: Added Healthcare LLM Security Blog post at the top -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 shadow-sm">
+            <img 
+              src="photos/caducis.jpeg" 
+              class="card-img-top blog-card-image" 
+              alt="Securing Healthcare LLM Deployments"
+              onerror="this.src='photos/datacenter.jpeg';"
+            >
+            <div class="card-body d-flex flex-column">
+              <div class="blog-card-date mb-2 text-muted">
+                <small>May 14, 2025</small>
+              </div>
+              <h2 class="h5 card-title">Securing Healthcare LLMs: On-Prem Deployment Architecture for PHI Protection</h2>
+              <p class="card-text flex-grow-1">
+                Large Language Models (LLMs) are revolutionizing healthcare operations, but their deployment introduces significant 
+                security and compliance challenges. Explore battle-tested architecture patterns for secure healthcare LLM deployments.
+              </p>
+              <a href="blog-security-healthcare.html" class="btn btn-dark mt-3">Read Article</a>
+            </div>
+          </div>
+        </div>
+        <!-- [EDIT END]: Added Healthcare LLM Security Blog post -->
+        
+        <!-- VMware to Proxmox Migration Post -->
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <img 
@@ -92,7 +115,6 @@
             </div>
           </div>
         </div>
-        <!-- [EDIT END]: Added VMware to Proxmox/KVM blog post -->
         
         <!-- ADDED: Neuromorphic Computing Blog Post -->
         <div class="col-lg-4 col-md-6">
@@ -140,7 +162,7 @@
           </div>
         </div>
         
-        <!-- NEWLY ADDED: Card for Artificial Emotional Intelligence Chatbot -->
+        <!-- ADDED: Card for Artificial Emotional Intelligence Chatbot -->
         <div class="col-lg-4 col-md-6">
           <div class="card h-100 shadow-sm">
             <img 
@@ -263,6 +285,7 @@
           Connect on LinkedIn
         </a>
       </p>
+      <!-- Updated to match other pages: Removed "Mid-Level" -->
       <p class="mb-0">
         <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
       </p>

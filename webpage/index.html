@@ -242,7 +242,6 @@
       <h2 class="mb-4">From the Lazarus Labs Blog</h2>
       
       <!-- Desktop Layout (Featured + Grid) -->
-      <!-- [EDIT START]: Updated featured post to VMware/Proxmox migration blog -->
       <div class="d-none d-md-block">
         <!-- Featured Post (Newest) -->
         <div class="row mb-5">
@@ -251,10 +250,10 @@
               <div class="row g-0">
                 <div class="col-md-5">
                   <img 
-                    src="photos/linux.jpeg" 
+                    src="photos/caducis.jpeg" 
                     class="img-fluid rounded-start h-100 w-100 featured-image" 
                     style="object-fit: cover;" 
-                    alt="VMware to Proxmox Migration" 
+                    alt="Securing Healthcare LLM Deployments" 
                     onerror="this.src='photos/datacenter.jpeg';"
                   >
                 </div>
@@ -263,12 +262,12 @@
                     <div class="featured-post-badge mb-2">
                       <span class="badge bg-primary">New</span>
                     </div>
-                    <h3 class="h4 card-title">The Great Escape: Migrating from VMware to Proxmox/KVM in 2025</h3>
-                    <p class="text-muted"><small>May 10, 2025</small></p>
+                    <h3 class="h4 card-title">Securing Healthcare LLMs: On-Prem Deployment Architecture for PHI Protection</h3>
+                    <p class="text-muted"><small>May 14, 2025</small></p>
                     <p class="card-text flex-grow-1">
-                      The Broadcom acquisition of VMware has dramatically changed the virtualization landscape, triggering an unprecedented migration wave toward open-source alternatives. This technical analysis explores all aspects of moving from VMware to Proxmox/KVM, with special focus on GPU workloads, security implications, and practical migration strategies.
+                      Large Language Models (LLMs) are revolutionizing healthcare operations, but their deployment introduces significant security and compliance challenges. Explore battle-tested architecture patterns for secure healthcare LLM deployments with robust PHI protection and regulatory compliance.
                     </p>
-                    <a href="blogvmware.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
+                    <a href="blog-security-healthcare.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
                   </div>
                 </div>
               </div>
@@ -278,7 +277,27 @@
         
         <!-- Other Posts Grid -->
         <div class="row g-4">
-          <!-- 1) Chatbot (Previously Featured) -->
+          <!-- 1) VMware to Proxmox Migration (Previous featured) -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img 
+                src="photos/linux.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="VMware to Proxmox Migration" 
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+              <div class="card-body d-flex flex-column">
+                <h3 class="h5">The Great Escape: Migrating from VMware to Proxmox/KVM</h3>
+                <p class="text-muted"><small>May 10, 2025</small></p>
+                <p class="flex-grow-1">
+                  Explore practical strategies for migrating from VMware to Proxmox/KVM following the Broadcom acquisition.
+                </p>
+                <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 2) Chatbot Blog -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img 
@@ -298,7 +317,7 @@
             </div>
           </div>
           
-          <!-- 2) GPU Infrastructure Security -->
+          <!-- 3) GPU Infrastructure Security -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm">
               <img 
@@ -318,32 +337,10 @@
               </div>
             </div>
           </div>
-          
-          <!-- 3) Building Your Own GPU Lab -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img 
-                src="photos/gpu.jpeg" 
-                class="card-img-top blog-card-image" 
-                alt="GPU Lab Implementation" 
-                onerror="this.src='photos/datacenter.jpeg';"
-              >
-              <div class="card-body d-flex flex-column">
-                <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
-                <p class="text-muted"><small>April 11, 2025</small></p>
-                <p class="flex-grow-1">
-                  Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
-                </p>
-                <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      <!-- [EDIT END]: Updated featured post -->
       
       <!-- Mobile Layout (Carousel) -->
-      <!-- [EDIT START]: Updated mobile carousel with VMware/Proxmox migration blog -->
       <div class="d-md-none">
         <!-- Carousel Component -->
         <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -357,8 +354,29 @@
           
           <!-- Carousel Items -->
           <div class="carousel-inner">
-            <!-- Slide 1: VMware to Proxmox Migration (Newest) -->
+            <!-- Slide 1: Healthcare LLM Security Blog (Newest) -->
             <div class="carousel-item active">
+              <div class="card h-100 shadow">
+                <img 
+                  src="photos/caducis.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="Securing Healthcare LLM Deployments" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+                <div class="card-body d-flex flex-column">
+                  <span class="badge bg-primary mb-2">New</span>
+                  <h3 class="h5">Securing Healthcare LLMs: On-Prem Architecture for PHI Protection</h3>
+                  <p class="text-muted"><small>May 14, 2025</small></p>
+                  <p class="flex-grow-1">
+                    Explore battle-tested architecture patterns for secure healthcare LLM deployments with robust PHI protection.
+                  </p>
+                  <a href="blog-security-healthcare.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Slide 2: VMware to Proxmox Migration (Previously featured) -->
+            <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
                   src="photos/linux.jpeg" 
@@ -367,7 +385,6 @@
                   onerror="this.src='photos/datacenter.jpeg';"
                 >
                 <div class="card-body d-flex flex-column">
-                  <span class="badge bg-primary mb-2">New</span>
                   <h3 class="h5">The Great Escape: Migrating from VMware to Proxmox/KVM</h3>
                   <p class="text-muted"><small>May 10, 2025</small></p>
                   <p class="flex-grow-1">
@@ -378,7 +395,7 @@
               </div>
             </div>
             
-            <!-- Slide 2: Chatbot Blog (Previously Featured) -->
+            <!-- Slide 3: Chatbot Blog -->
             <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
@@ -398,7 +415,7 @@
               </div>
             </div>
             
-            <!-- Slide 3: GPU Infrastructure Security -->
+            <!-- Slide 4: GPU Infrastructure Security -->
             <div class="carousel-item">
               <div class="card h-100 shadow">
                 <img 
@@ -418,26 +435,6 @@
                 </div>
               </div>
             </div>
-            
-            <!-- Slide 4: Building Your Own GPU Lab -->
-            <div class="carousel-item">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/gpu.jpeg" 
-                  class="card-img-top blog-card-image" 
-                  alt="GPU Lab Implementation" 
-                  onerror="this.src='photos/datacenter.jpeg';"
-                >
-                <div class="card-body d-flex flex-column">
-                  <h3 class="h5">Building Your Own GPU Lab: Practical Lessons</h3>
-                  <p class="text-muted"><small>April 11, 2025</small></p>
-                  <p class="flex-grow-1">
-                    Discover hands-on insights from my personal experience building a cost-effective GPU lab for AI workloads.
-                  </p>
-                  <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
-                </div>
-              </div>
-            </div>
           </div>
           
           <!-- Carousel Controls -->
@@ -451,7 +448,6 @@
           </button>
         </div>
       </div>
-      <!-- [EDIT END]: Updated mobile carousel -->
       
       <!-- View All Posts Button -->
       <div class="text-center mt-4">
