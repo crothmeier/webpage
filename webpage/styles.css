@@ -1,10 +1,10 @@
 /*
   FILE: styles.css
-  COMMENTED CHANGES:
-    [EDITED A] Bounce effect for .bounce-me
-    [ADDED B] Code block styling for technical blog posts
-    [ADDED C] Featured post and carousel styling for blog display
-    [ADDED D] About Us page enhancements with various CSS effects
+  UPDATED WITH:
+    - Enhanced global animations and effects from about-us-page
+    - Consistent button styles across all pages
+    - Improved blog cards and featured post styling
+    - Optimized mobile responsiveness
 */
 
 /* -------------------------
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, sans-serif; /* Approx. WP style */
+  font-family: "Segoe UI", Tahoma, sans-serif;
   font-size: 16px;
   color: #333;
   background-color: #fff;
@@ -78,7 +78,70 @@ p {
 }
 
 /* -------------------------
-   3. SECTIONS & CARDS
+   3. HERO GRADIENT BACKGROUND
+   ------------------------- */
+
+.hero-gradient {
+  background: linear-gradient(135deg, #0056b3, #007bff, #6c757d);
+  background-size: 400% 400%;
+  animation: gradient-shift 15s ease infinite;
+  padding: 80px 0;
+  margin-bottom: 30px;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-text {
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* -------------------------
+   4. TYPEWRITER EFFECT
+   ------------------------- */
+
+.typewriter-container {
+  display: flex;
+  justify-content: center;
+  min-height: 30px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.typewriter {
+  overflow: hidden;
+  border-right: 3px solid rgba(255,255,255,0.75);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(255,255,255,0.75); }
+}
+
+/* -------------------------
+   5. SECTIONS & CARDS
    ------------------------- */
 
 .bg-light-gray {
@@ -124,307 +187,14 @@ p {
 }
 
 /* -------------------------
-   4. BLOG SPECIFIC
+   6. 3D TILT CARD EFFECT
    ------------------------- */
 
-.blog-post-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.blog-post-content {
-  font-size: 1.1rem;
-}
-
-.blog-post-content h2 {
-  font-size: 1.8rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.blog-post-content h3 {
-  font-size: 1.4rem;
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
-}
-
-.blog-post-content p {
-  margin-bottom: 1.5rem;
-}
-
-.blog-post-content ul,
-.blog-post-content ol {
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-}
-
-.blog-post-content ul li,
-.blog-post-content ol li {
-  margin-bottom: 0.5rem;
-}
-
-/* [ADDED B] Code block styling */
-pre {
-  font-family: "Consolas", "Monaco", monospace;
-  font-size: 0.9rem;
-  line-height: 1.4;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  border-radius: 4px;
-}
-
-pre code {
-  display: block;
-  padding: 1rem;
-}
-
-.blog-post-content pre {
-  margin-bottom: 1.5rem;
-  border-left: 4px solid #007bff;
-}
-
-/* [ADDED B] Inline code styling */
-code:not(pre code) {
-  background-color: #f8f9fa;
-  padding: 0.2rem 0.4rem;
-  border-radius: 3px;
-  font-size: 0.9em;
-  color: #e83e8c;
-}
-
-/* [ADDED B] Improve spacing after code blocks */
-.blog-post-content pre + p {
-  margin-top: 1.5rem;
-}
-
-/* Blog card images */
-.blog-card-image {
-  height: 200px;
-  object-fit: cover;
-}
-
-/* Post navigation buttons */
-.blog-post-navigation .btn {
-  white-space: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  transition: all 0.2s ease-in-out;
-}
-
-.blog-post-navigation .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Related posts hover effect */
-.related-posts .card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.related-posts .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-}
-
-/* Blog index page animation */
-.blog-index .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
-.blog-index .card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-/* [ADDED C] Featured Post Styling */
-.featured-post {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  overflow: hidden;
-}
-
-.featured-post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-}
-
-.featured-post .featured-image {
-  height: 100%;
-  object-fit: cover;
-}
-
-.featured-post-badge .badge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* [ADDED C] Carousel Customization */
-.carousel-item {
-  padding: 1rem 0;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 10%;
-  opacity: 0.7;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0,0,0,0.3);
-  border-radius: 50%;
-  padding: 1rem;
-  background-size: 50%;
-}
-
-.carousel-indicators {
-  bottom: -10px;
-}
-
-.carousel-indicators button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-  background-color: #999;
-  opacity: 0.5;
-}
-
-.carousel-indicators button.active {
-  background-color: #333;
-  opacity: 1;
-}
-
-/* -------------------------
-   5. FOOTER
-   ------------------------- */
-
-footer {
-  text-align: center;
-  color: #666;
-}
-
-footer a {
-  color: #333;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* -------------------------
-   6. FADE-IN ANIMATION
-   ------------------------- */
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* -------------------------
-   7. [EDITED A] BOUNCE EFFECT
-   (Simple "bounce" on hover)
-   ------------------------- */
-
-@keyframes bounceMe {
-  0%, 20%, 60%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-8px);
-  }
-  80% {
-    transform: translateY(-4px);
-  }
-}
-
-.bounce-me:hover {
-  animation: bounceMe 0.6s;
-}
-
-/* [ADDED D] - ABOUT US PAGE ENHANCEMENTS */
-
-/* -------------------------
-   8. HERO GRADIENT BACKGROUND
-   ------------------------- */
-
-.hero-gradient {
-  background: linear-gradient(135deg, #0056b3, #007bff, #6c757d);
-  background-size: 400% 400%;
-  animation: gradient-shift 15s ease infinite;
-  padding: 80px 0;
-  margin-bottom: 30px;
-}
-
-@keyframes gradient-shift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.hero-text {
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-}
-
-/* -------------------------
-   9. TYPEWRITER EFFECT
-   ------------------------- */
-
-.typewriter-container {
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  overflow: hidden;
-  margin-bottom: 20px;
-}
-
-.typewriter {
-  overflow: hidden;
-  border-right: 3px solid rgba(255,255,255,0.75);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.1em;
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgba(255,255,255,0.75); }
-}
-
-/* -------------------------
-   10. CARD EFFECTS
-   ------------------------- */
-
-/* 3D Tilt Card Effect */
 .tilt-card {
   transition: transform 0.5s ease;
   transform-style: preserve-3d;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 8px;
 }
 
 .tilt-card:hover {
@@ -432,7 +202,10 @@ footer a:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-/* Decorative Brackets */
+/* -------------------------
+   7. DECORATIVE BRACKETS
+   ------------------------- */
+
 .decorative-brackets {
   position: relative;
   padding: 15px;
@@ -462,7 +235,7 @@ footer a:hover {
 }
 
 /* -------------------------
-   11. EXPERTISE CARDS ANIMATION
+   8. EXPERTISE CARDS ANIMATION
    ------------------------- */
 
 .slide-in-left {
@@ -505,7 +278,10 @@ footer a:hover {
   transform: translateX(5px);
 }
 
-/* Icons with Pulse Effect */
+/* -------------------------
+   9. ICONS WITH PULSE EFFECT
+   ------------------------- */
+
 .pulse-icon {
   animation: pulse 2s infinite;
 }
@@ -526,7 +302,7 @@ footer a:hover {
 }
 
 /* -------------------------
-   12. APPROACH SECTION HIGHLIGHT
+   10. HIGHLIGHT CONTAINER
    ------------------------- */
 
 .highlight-container {
@@ -559,7 +335,10 @@ footer a:hover {
   }
 }
 
-/* Floating Image Effect */
+/* -------------------------
+   11. FLOATING IMAGE EFFECT
+   ------------------------- */
+
 .image-container {
   perspective: 1000px;
 }
@@ -582,46 +361,7 @@ footer a:hover {
 }
 
 /* -------------------------
-   13. VALUES SECTION STYLING
-   ------------------------- */
-
-.clip-card {
-  position: relative;
-  clip-path: polygon(0 5%, 5% 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0 95%);
-  transition: clip-path 0.5s ease;
-}
-
-.clip-card:hover {
-  clip-path: polygon(0 3%, 3% 0, 97% 0, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0 97%);
-}
-
-.value-card {
-  padding: 20px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.value-card:hover {
-  background-color: white;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transform: translateY(-10px);
-}
-
-.value-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: rgba(0, 123, 255, 0.1);
-  margin-bottom: 15px;
-  font-size: 24px;
-}
-
-/* -------------------------
-   14. WHY CHOOSE US SECTION
+   12. SPOTLIGHT CONTAINER
    ------------------------- */
 
 .spotlight-container {
@@ -648,7 +388,10 @@ footer a:hover {
   opacity: 1;
 }
 
-/* Border Animation Effect */
+/* -------------------------
+   13. BORDER ANIMATION EFFECT
+   ------------------------- */
+
 .border-animation {
   position: relative;
   display: inline-block;
@@ -696,7 +439,151 @@ footer a:hover {
 }
 
 /* -------------------------
-   15. BLOG CARD HOVER EFFECTS
+   14. BLOG SPECIFIC
+   ------------------------- */
+
+.blog-post-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.blog-post-content {
+  font-size: 1.1rem;
+}
+
+.blog-post-content h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post-content h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.blog-post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-post-content ul,
+.blog-post-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.blog-post-content ul li,
+.blog-post-content ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code block styling */
+pre {
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-radius: 4px;
+}
+
+pre code {
+  display: block;
+  padding: 1rem;
+}
+
+.blog-post-content pre {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #007bff;
+}
+
+/* Inline code styling */
+code:not(pre code) {
+  background-color: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+  color: #e83e8c;
+}
+
+/* Improve spacing after code blocks */
+.blog-post-content pre + p {
+  margin-top: 1.5rem;
+}
+
+/* -------------------------
+   15. BLOG CARD STYLES
+   ------------------------- */
+
+/* Blog card images */
+.blog-card-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Post navigation buttons */
+.blog-post-navigation .btn {
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-post-navigation .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Related posts hover effect */
+.related-posts .card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.related-posts .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Blog index page animation */
+.blog-index .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.blog-index .card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+/* -------------------------
+   16. FEATURED POST STYLING
+   ------------------------- */
+
+.featured-post {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.featured-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.featured-post .featured-image {
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-post-badge .badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* -------------------------
+   17. HOVER CARD EFFECT
    ------------------------- */
 
 .hover-card {
@@ -724,7 +611,47 @@ footer a:hover {
 }
 
 /* -------------------------
-   16. GLOWING BUTTON EFFECT
+   18. CAROUSEL CUSTOMIZATION
+   ------------------------- */
+
+.carousel-item {
+  padding: 1rem 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 10%;
+  opacity: 0.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50%;
+  padding: 1rem;
+  background-size: 50%;
+}
+
+.carousel-indicators {
+  bottom: -10px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #999;
+  opacity: 0.5;
+}
+
+.carousel-indicators button.active {
+  background-color: #333;
+  opacity: 1;
+}
+
+/* -------------------------
+   19. GLOWING BUTTON EFFECT
    ------------------------- */
 
 .glow-button {
@@ -737,6 +664,7 @@ footer a:hover {
 .glow-button:hover {
   color: white;
   box-shadow: 0 0 15px rgba(0, 123, 255, 0.8);
+  transform: translateY(-3px);
 }
 
 .glow-button::before {
@@ -771,9 +699,63 @@ footer a:hover {
   }
 }
 
-/* 
-   17. MEDIA QUERIES & RESPONSIVENESS
-*/
+/* -------------------------
+   20. BOUNCE EFFECT
+   ------------------------- */
+
+@keyframes bounceMe {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  80% {
+    transform: translateY(-4px);
+  }
+}
+
+.bounce-me:hover {
+  animation: bounceMe 0.6s;
+}
+
+/* -------------------------
+   21. FOOTER
+   ------------------------- */
+
+footer {
+  text-align: center;
+  color: #666;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------
+   22. FADE-IN ANIMATION
+   ------------------------- */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -------------------------
+   23. MEDIA QUERIES & RESPONSIVENESS
+   ------------------------- */
+
 @media (max-width: 767px) {
   .hero-section .hero-heading {
     font-size: 1.8rem;
@@ -801,7 +783,7 @@ footer a:hover {
     height: 160px;
   }
   
-  /* [ADDED B] Adjust code block padding on mobile */
+  /* Adjust code block padding on mobile */
   pre {
     padding: 0.75rem;
   }
@@ -810,12 +792,12 @@ footer a:hover {
     padding: 0.5rem;
   }
   
-  /* [ADDED C] Featured post image height on mobile */
+  /* Featured post image height on mobile */
   .featured-post .featured-image {
     height: 200px;
   }
   
-  /* [ADDED D] Adjustments for About page effects on mobile */
+  /* Adjustments for About page effects on mobile */
   .typewriter {
     animation: none;
     border-right: none;

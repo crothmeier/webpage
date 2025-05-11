@@ -21,6 +21,8 @@
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
     rel="stylesheet"
   >
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 
@@ -41,6 +43,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us-page.html">About</a></li>
           <!-- Mark blog as active -->
           <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
           <li class="nav-item">
@@ -57,11 +60,14 @@
     </div>
   </nav>
   
-  <!-- [UNCHANGED] Blog Header Section -->
-  <section class="py-5 bg-light">
+  <!-- [ENHANCED] Blog Header Section with Gradient Background -->
+  <section class="py-5 hero-gradient">
     <div class="container text-center">
-      <h1 class="mb-3">Lazarus Labs Blog</h1>
-      <p class="lead mb-0 text-muted">Technical insights, case studies, and practical solutions for your IT infrastructure</p>
+      <h1 class="mb-3 text-white hero-text">Lazarus Labs Blog</h1>
+      <!-- Added typewriter container from about page -->
+      <div class="typewriter-container">
+        <p class="lead mb-0 text-white typewriter">Technical insights, case studies, and practical solutions for your IT infrastructure</p>
+      </div>
     </div>
   </section>
   
@@ -71,13 +77,15 @@
       <div class="row g-4">
         <!-- [EDIT START]: Added Healthcare LLM Security Blog post at the top -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/caducis.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="Securing Healthcare LLM Deployments"
-              onerror="this.src='photos/cadusis.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/caducis.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="Securing Healthcare LLM Deployments"
+                onerror="this.src='photos/cadusis.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>May 10, 2025</small>
@@ -87,7 +95,7 @@
                 Large Language Models (LLMs) are revolutionizing healthcare operations, but their deployment introduces significant 
                 security and compliance challenges. Explore battle-tested architecture patterns for secure healthcare LLM deployments.
               </p>
-              <a href="blog-security-healthcare.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog-security-healthcare.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
@@ -95,13 +103,15 @@
         
         <!-- VMware to Proxmox Migration Post -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/linux.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="VMware to Proxmox Migration"
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/linux.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="VMware to Proxmox Migration"
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>May 10, 2025</small>
@@ -111,20 +121,22 @@
                 Explore the impacts of Broadcom's VMware acquisition and learn practical strategies for 
                 migrating to Proxmox/KVM with special focus on GPU workloads, security, and cost savings.
               </p>
-              <a href="blogvmware.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blogvmware.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- ADDED: Neuromorphic Computing Blog Post -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/face.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="Neuromorphic Computing for Edge AI"
-              onerror="this.src='photos/glasses.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/face.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="Neuromorphic Computing for Edge AI"
+                onerror="this.src='photos/glasses.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 18, 2025</small>
@@ -134,20 +146,22 @@
                 Explore how neuromorphic computing is revolutionizing edge AI deployments with energy-efficient, 
                 brain-inspired architectures for on-premises infrastructure.
               </p>
-              <a href="blog3.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog3.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- ADDED: GPU Virtualization Blog Post -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/gpu.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="GPU Virtualization vs. PCIe Passthrough"
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/gpu.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="GPU Virtualization vs. PCIe Passthrough"
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 26, 2025</small>
@@ -157,20 +171,22 @@
                 Navigate the choice between GPU virtualization and PCIe passthrough for AI workloads with our practical guide 
                 comparing performance impact, licensing costs, and management considerations.
               </p>
-              <a href="blog4.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog4.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- ADDED: Card for Artificial Emotional Intelligence Chatbot -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/chatbot.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="AI Chatbot with Emotional Intelligence"
-              onerror="this.src='photos/glasses.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/chatbot.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="AI Chatbot with Emotional Intelligence"
+                onerror="this.src='photos/glasses.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 12, 2025</small>
@@ -180,20 +196,22 @@
                 Learn how to build an emotionally intelligent chatbot with real-time emotion detection, 
                 adaptive responses, and ethical considerations for internal deployment.
               </p>
-              <a href="chatbot-blog.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="chatbot-blog.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- Card 1: GPU Infrastructure Security -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/GPUInfra.png" 
-              class="card-img-top blog-card-image" 
-              alt="GPU Security Infrastructure"
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/GPUInfra.png" 
+                class="card-img-top blog-card-image" 
+                alt="GPU Security Infrastructure"
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 11, 2025</small>
@@ -203,20 +221,22 @@
                 In today's AI-driven world, GPU deployments have evolved from mere tools to integral components of business operations. 
                 This post explores GPU security best practices through the lens of current AI/ML trends.
               </p>
-              <a href="blog-gpu-security-2025.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog-gpu-security-2025.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- Card 2: Building Your Own GPU Lab -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/gpu.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="GPU Lab Implementation"
-              onerror="this.src='photos/datacenter.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/gpu.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="GPU Lab Implementation"
+                onerror="this.src='photos/datacenter.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 11, 2025</small>
@@ -226,20 +246,22 @@
                 Since my post on the cost benefits of on-premises GPU infrastructure, I've received several questions about implementation. 
                 Learn from my hands-on experience building a GPU lab.
               </p>
-              <a href="blog-gpu-implementation.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog-gpu-implementation.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
         
         <!-- Card 3: On-Prem GPU Lab: Real Cost Savings vs. Cloud -->
         <div class="col-lg-4 col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img 
-              src="photos/recycle.jpeg" 
-              class="card-img-top blog-card-image" 
-              alt="Cost Benefit Analysis"
-              onerror="this.src='photos/glasses.jpeg';"
-            >
+          <div class="card h-100 shadow-sm hover-card">
+            <div class="card-image-container">
+              <img 
+                src="photos/recycle.jpeg" 
+                class="card-img-top blog-card-image" 
+                alt="Cost Benefit Analysis"
+                onerror="this.src='photos/glasses.jpeg';"
+              >
+            </div>
             <div class="card-body d-flex flex-column">
               <div class="blog-card-date mb-2 text-muted">
                 <small>April 11, 2025</small>
@@ -249,7 +271,7 @@
                 After years of implementing cloud and hybrid solutions for clients, I've built something different: 
                 an on-premises GPU lab that's delivering real cost benefits over cloud AI services.
               </p>
-              <a href="blog-gpu-cost.html" class="btn btn-dark mt-3">Read Article</a>
+              <a href="blog-gpu-cost.html" class="btn btn-dark mt-3 glow-button">Read Article</a>
             </div>
           </div>
         </div>
@@ -257,21 +279,24 @@
     </div>
   </section>
   
-  <!-- Subscribe Section (optional) -->
+  <!-- Subscribe Section with Tilt Card Effect -->
   <section class="py-5 bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-6 text-center">
-          <h3 class="mb-4">Subscribe for Updates</h3>
-          <p class="mb-4">Get the latest technical insights and case studies delivered straight to your inbox.</p>
-          <form class="row g-3 justify-content-center">
-            <div class="col-8">
-              <input type="email" class="form-control" placeholder="Your email address">
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Subscribe</button>
-            </div>
-          </form>
+          <!-- Added tilt-card class from about page -->
+          <div class="tilt-card p-4">
+            <h3 class="mb-4">Subscribe for Updates</h3>
+            <p class="mb-4">Get the latest technical insights and case studies delivered straight to your inbox.</p>
+            <form class="row g-3 justify-content-center">
+              <div class="col-8">
+                <input type="email" class="form-control" placeholder="Your email address">
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-3 glow-button">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>

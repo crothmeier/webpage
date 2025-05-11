@@ -21,6 +21,9 @@
     crossorigin="anonymous"
   >
   
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
@@ -59,23 +62,26 @@
   </nav>
   <!-- END NAVBAR -->
 
-  <!-- HERO SECTION -->
-  <section class="hero-section fade-in-section">
+  <!-- HERO SECTION WITH GRADIENT BACKGROUND -->
+  <section class="hero-gradient fade-in-section">
     <div class="container text-center">
       <img 
         src="photos/lazlogo2-draft2.png"
         alt="Lazarus Laboratories Logo"
         style="max-width: 200px;"
       />
-      <h1 class="hero-heading mt-4">
+      <h1 class="hero-heading mt-4 text-white">
         Personalized, one-on-one managed IT services
       </h1>
-      <p class="hero-subtext">
-        Specializing in Managed IT Services, Secure Cloud Solutions, Cybersecurity, and Data Protection,
-        designed personally for your growing business.
-      </p>
-      <div class="hero-button">
-        <a href="about-us-page.html" class="btn btn-light">About us</a>
+      <!-- Added typewriter container from about page -->
+      <div class="typewriter-container">
+        <p class="lead mb-0 text-white typewriter">
+          Specializing in Managed IT Services, Secure Cloud Solutions, Cybersecurity, and Data Protection
+        </p>
+      </div>
+      <div class="hero-button mt-4">
+        <!-- Updated with glow-button class from about page -->
+        <a href="about-us-page.html" class="btn btn-light glow-button">About us</a>
       </div>
     </div>
   </section>
@@ -92,8 +98,13 @@
 
       <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
         <div class="col">
-          <div class="card border-0 text-center h-100 bounce-me">
+          <!-- Added slide-in-left class from about page -->
+          <div class="card border-0 text-center h-100 bounce-me slide-in-left">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-server fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Managed IT Services</h3>
               <p class="mb-0">
                 Proactive maintenance, monitoring, and support tailored specifically to your business.
@@ -104,6 +115,10 @@
         <div class="col">
           <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-cloud fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Cloud &amp; Hybrid Infrastructure</h3>
               <p class="mb-0">
                 Efficient and scalable cloud environments, bridging on-premises systems and modern cloud solutions.
@@ -112,8 +127,13 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100 bounce-me">
+          <!-- Added slide-in-right class from about page -->
+          <div class="card border-0 text-center h-100 bounce-me slide-in-right">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-shield-alt fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Cybersecurity Solutions</h3>
               <p class="mb-0">
                 Advanced threat protection, security assessments, and proactive defenses to keep your data secure.
@@ -125,8 +145,13 @@
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
-          <div class="card border-0 text-center h-100 bounce-me">
+          <!-- Added slide-in-left class from about page -->
+          <div class="card border-0 text-center h-100 bounce-me slide-in-left">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-database fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Data Backup &amp; Recovery</h3>
               <p class="mb-0">
                 Reliable, automated backup solutions ensuring rapid recovery and minimal downtime.
@@ -137,6 +162,10 @@
         <div class="col">
           <div class="card border-0 text-center h-100 bounce-me">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-project-diagram fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Infrastructure Consulting</h3>
               <p class="mb-0">
                 Expert analysis and guidance for optimizing your technology infrastructure.
@@ -145,8 +174,13 @@
           </div>
         </div>
         <div class="col">
-          <div class="card border-0 text-center h-100 bounce-me">
+          <!-- Added slide-in-right class from about page -->
+          <div class="card border-0 text-center h-100 bounce-me slide-in-right">
             <div class="card-body">
+              <!-- Added icon with pulse effect from about page -->
+              <div class="text-center mb-3">
+                <i class="fas fa-headset fa-3x text-primary pulse-icon"></i>
+              </div>
               <h3 class="h5">Personalized IT Support</h3>
               <p class="mb-0">
                 Individualized, responsive technical support ensuring your systems run smoothly.
@@ -167,39 +201,49 @@
         and support your business goals.
       </p>
 
-      <div class="row align-items-center mb-5">
+      <!-- Added highlight-container class from about page -->
+      <div class="row align-items-center mb-5 highlight-container">
         <div class="col-md-6">
           <h3 class="mb-3">Your Trusted IT Partner</h3>
           <ul class="list-unstyled">
-            <li>• Personalized, one-on-one technical support.</li>
-            <li>• Expertise in cloud and hybrid infrastructure management.</li>
-            <li>• Strategic cybersecurity solutions protecting your business.</li>
-            <li>• Reliable backup and rapid disaster recovery.</li>
+            <!-- Added expertise-item class from about page -->
+            <li class="mb-3 expertise-item">• Personalized, one-on-one technical support.</li>
+            <li class="mb-3 expertise-item">• Expertise in cloud and hybrid infrastructure management.</li>
+            <li class="mb-3 expertise-item">• Strategic cybersecurity solutions protecting your business.</li>
+            <li class="expertise-item">• Reliable backup and rapid disaster recovery.</li>
           </ul>
         </div>
         <div class="col-md-6 text-center">
-          <img 
-            src="photos/glasses.jpeg"
-            alt="Glasses / IT Symbolic" 
-            class="rounded-image"
-          />
+          <!-- Added image-container and floating-image classes from about page -->
+          <div class="image-container">
+            <img 
+              src="photos/glasses.jpeg"
+              alt="Glasses / IT Symbolic" 
+              class="rounded-image floating-image"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="row align-items-center">
+      <!-- Added spotlight-container class from about page -->
+      <div class="row align-items-center spotlight-container">
         <div class="col-md-6 text-center">
-          <img 
-            src="photos/datacenter.jpeg"
-            alt="Datacenter / Cloud Infrastructure" 
-            class="rounded-image mb-4 mb-md-0"
-          />
+          <!-- Added border-animation class from about page -->
+          <div class="border-animation">
+            <img 
+              src="photos/datacenter.jpeg"
+              alt="Datacenter / Cloud Infrastructure" 
+              class="rounded-image mb-4 mb-md-0"
+            />
+          </div>
         </div>
         <div class="col-md-6">
           <h3 class="mb-3">Stay Informed &amp; Connected</h3>
           <ul class="list-unstyled">
-            <li>• Insights into emerging IT trends and cybersecurity best practices.</li>
-            <li>• Real-world case studies showcasing successful IT solutions.</li>
-            <li>• Expert tips for optimizing your business technology.</li>
+            <!-- Added expertise-item class from about page -->
+            <li class="mb-3 expertise-item">• Insights into emerging IT trends and cybersecurity best practices.</li>
+            <li class="mb-3 expertise-item">• Real-world case studies showcasing successful IT solutions.</li>
+            <li class="expertise-item">• Expert tips for optimizing your business technology.</li>
           </ul>
         </div>
       </div>
@@ -247,6 +291,7 @@
         <!-- Featured Post (Newest) -->
         <div class="row mb-5">
           <div class="col-12">
+            <!-- Added featured-post class from blog pages -->
             <div class="card shadow-sm featured-post">
               <div class="row g-0">
                 <div class="col-md-5">
@@ -268,7 +313,7 @@
                     <p class="card-text flex-grow-1">
                       Large Language Models (LLMs) are revolutionizing healthcare operations, but their deployment introduces significant security and compliance challenges. Explore battle-tested architecture patterns for secure healthcare LLM deployments with robust PHI protection and regulatory compliance.
                     </p>
-                    <a href="blog-security-healthcare.html" class="btn btn-dark align-self-start mt-auto">Read Article</a>
+                    <a href="blog-security-healthcare.html" class="btn btn-dark align-self-start mt-auto glow-button">Read Article</a>
                   </div>
                 </div>
               </div>
@@ -280,53 +325,65 @@
         <div class="row g-4">
           <!-- 1) VMware to Proxmox Migration (Previous featured) -->
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img 
-                src="photos/linux.jpeg" 
-                class="card-img-top blog-card-image" 
-                alt="VMware to Proxmox Migration" 
-                onerror="this.src='photos/datacenter.jpeg';"
-              >
+            <!-- Added hover-card class from blog pages -->
+            <div class="card h-100 shadow-sm hover-card">
+              <!-- Added card-image-container class from blog pages -->
+              <div class="card-image-container">
+                <img 
+                  src="photos/linux.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="VMware to Proxmox Migration" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+              </div>
               <div class="card-body d-flex flex-column">
                 <h3 class="h5">The Great Escape: Migrating from VMware to Proxmox/KVM</h3>
                 <p class="text-muted"><small>May 10, 2025</small></p>
                 <p class="flex-grow-1">
                   Explore practical strategies for migrating from VMware to Proxmox/KVM following the Broadcom acquisition.
                 </p>
-                <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
               </div>
             </div>
           </div>
           
           <!-- 2) Chatbot Blog -->
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img 
-                src="photos/chatbot.jpeg" 
-                class="card-img-top blog-card-image" 
-                alt="AI Chatbot with Emotional Intelligence" 
-                onerror="this.src='photos/glasses.jpeg';"
-              >
+            <!-- Added hover-card class from blog pages -->
+            <div class="card h-100 shadow-sm hover-card">
+              <!-- Added card-image-container class from blog pages -->
+              <div class="card-image-container">
+                <img 
+                  src="photos/chatbot.jpeg" 
+                  class="card-img-top blog-card-image" 
+                  alt="AI Chatbot with Emotional Intelligence" 
+                  onerror="this.src='photos/glasses.jpeg';"
+                >
+              </div>
               <div class="card-body d-flex flex-column">
                 <h3 class="h5">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
                 <p class="text-muted"><small>April 12, 2025</small></p>
                 <p class="flex-grow-1">
                   Learn how to build an emotionally intelligent chatbot with real-time emotion detection and adaptive responses.
                 </p>
-                <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
               </div>
             </div>
           </div>
           
           <!-- 3) GPU Infrastructure Security -->
           <div class="col-md-4">
-            <div class="card h-100 shadow-sm">
-              <img 
-                src="photos/GPUInfra.png" 
-                class="card-img-top blog-card-image" 
-                alt="GPU Security Infrastructure" 
-                onerror="this.src='photos/datacenter.jpeg';"
-              >
+            <!-- Added hover-card class from blog pages -->
+            <div class="card h-100 shadow-sm hover-card">
+              <!-- Added card-image-container class from blog pages -->
+              <div class="card-image-container">
+                <img 
+                  src="photos/GPUInfra.png" 
+                  class="card-img-top blog-card-image" 
+                  alt="GPU Security Infrastructure" 
+                  onerror="this.src='photos/datacenter.jpeg';"
+                >
+              </div>
               <div class="card-body d-flex flex-column">
                 <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
                 <p class="text-muted"><small>April 11, 2025</small></p>
@@ -334,7 +391,7 @@
                   In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
                   Learn security best practices for modern AI systems.
                 </p>
-                <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
               </div>
             </div>
           </div>
@@ -357,13 +414,15 @@
           <div class="carousel-inner">
             <!-- Slide 1: Healthcare LLM Security Blog (Newest) -->
             <div class="carousel-item active">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/caducis.jpeg" 
-                  class="card-img-top blog-card-image" 
-                  alt="Securing Healthcare LLM Deployments" 
-                  onerror="this.src='photos/datacenter.jpeg';"
-                >
+              <div class="card h-100 shadow hover-card">
+                <div class="card-image-container">
+                  <img 
+                    src="photos/caducis.jpeg" 
+                    class="card-img-top blog-card-image" 
+                    alt="Securing Healthcare LLM Deployments" 
+                    onerror="this.src='photos/datacenter.jpeg';"
+                  >
+                </div>
                 <div class="card-body d-flex flex-column">
                   <span class="badge bg-primary mb-2">New</span>
                   <h3 class="h5">Securing Healthcare LLMs: On-Prem Architecture for PHI Protection</h3>
@@ -371,60 +430,66 @@
                   <p class="flex-grow-1">
                     Explore battle-tested architecture patterns for secure healthcare LLM deployments with robust PHI protection.
                   </p>
-                  <a href="blog-security-healthcare.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                  <a href="blog-security-healthcare.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
                 </div>
               </div>
             </div>
             
             <!-- Slide 2: VMware to Proxmox Migration (Previously featured) -->
             <div class="carousel-item">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/linux.jpeg" 
-                  class="card-img-top blog-card-image" 
-                  alt="VMware to Proxmox Migration" 
-                  onerror="this.src='photos/datacenter.jpeg';"
-                >
+              <div class="card h-100 shadow hover-card">
+                <div class="card-image-container">
+                  <img 
+                    src="photos/linux.jpeg" 
+                    class="card-img-top blog-card-image" 
+                    alt="VMware to Proxmox Migration" 
+                    onerror="this.src='photos/datacenter.jpeg';"
+                  >
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h3 class="h5">The Great Escape: Migrating from VMware to Proxmox/KVM</h3>
                   <p class="text-muted"><small>May 10, 2025</small></p>
                   <p class="flex-grow-1">
                     Explore practical strategies for migrating from VMware to Proxmox/KVM following the Broadcom acquisition.
                   </p>
-                  <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                  <a href="blogvmware.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
                 </div>
               </div>
             </div>
             
             <!-- Slide 3: Chatbot Blog -->
             <div class="carousel-item">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/chatbot.jpeg" 
-                  class="card-img-top blog-card-image" 
-                  alt="AI Chatbot with Emotional Intelligence" 
-                  onerror="this.src='photos/glasses.jpeg';"
-                >
+              <div class="card h-100 shadow hover-card">
+                <div class="card-image-container">
+                  <img 
+                    src="photos/chatbot.jpeg" 
+                    class="card-img-top blog-card-image" 
+                    alt="AI Chatbot with Emotional Intelligence" 
+                    onerror="this.src='photos/glasses.jpeg';"
+                  >
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h3 class="h5">Building an Artificial Emotional Intelligence (AEI) Chatbot</h3>
                   <p class="text-muted"><small>April 12, 2025</small></p>
                   <p class="flex-grow-1">
                     Learn how to build an emotionally intelligent chatbot with real-time emotion detection and ethical considerations.
                   </p>
-                  <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                  <a href="chatbot-blog.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
                 </div>
               </div>
             </div>
             
             <!-- Slide 4: GPU Infrastructure Security -->
             <div class="carousel-item">
-              <div class="card h-100 shadow">
-                <img 
-                  src="photos/GPUInfra.png" 
-                  class="card-img-top blog-card-image" 
-                  alt="GPU Security Infrastructure" 
-                  onerror="this.src='photos/datacenter.jpeg';"
-                >
+              <div class="card h-100 shadow hover-card">
+                <div class="card-image-container">
+                  <img 
+                    src="photos/GPUInfra.png" 
+                    class="card-img-top blog-card-image" 
+                    alt="GPU Security Infrastructure" 
+                    onerror="this.src='photos/datacenter.jpeg';"
+                  >
+                </div>
                 <div class="card-body d-flex flex-column">
                   <h3 class="h5">GPU Infrastructure Security: Best Practices</h3>
                   <p class="text-muted"><small>April 11, 2025</small></p>
@@ -432,7 +497,7 @@
                     In today's AI-driven world, GPU deployments have evolved from mere tools to integral business components. 
                     Learn security best practices for modern AI systems.
                   </p>
-                  <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto">Read Article</a>
+                  <a href="blog-gpu-security-2025.html" class="btn btn-sm btn-dark mt-auto glow-button">Read Article</a>
                 </div>
               </div>
             </div>
@@ -452,7 +517,8 @@
       
       <!-- View All Posts Button -->
       <div class="text-center mt-4">
-        <a href="blog.html" class="btn btn-outline-dark">View All Posts</a>
+        <!-- Used glow-button class from about page -->
+        <a href="blog.html" class="btn btn-outline-dark glow-button">View All Posts</a>
       </div>
     </div>
   </section>
@@ -460,13 +526,15 @@
   <!-- CTA / SCHEDULE CALL SECTION -->
   <section class="py-5 fade-in-section">
     <div class="container">
-      <div class="cta-block mx-auto">
+      <!-- Added tilt-card class from about page -->
+      <div class="cta-block mx-auto tilt-card">
         <h2 class="text-center mb-3">Schedule a Strategy Call</h2>
         <p class="text-center mb-4">Get personalized IT solutions for your enterprise</p>
         <div class="text-center">
+          <!-- Used glow-button class from about page -->
           <a 
             href="mailto:crothmeier@lazarus-labs.com" 
-            class="btn btn-primary"
+            class="btn btn-primary glow-button"
           >
             Schedule Now
           </a>
