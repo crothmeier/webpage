@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore how GPU deployments have evolved from mere tools to integral components of business operations, and learn essential security best practices through the lens of current AI/ML trends in 2025." />
   <title>GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments in the 2025 AI Landscape | Lazarus Laboratories Consulting</title>
   
-  <!-- [EDITED 1] GOOGLE ANALYTICS (GA4) -->
+  <!-- Google Analytics (GA4) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3XZ9E5JLY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -13,20 +14,43 @@
     gtag('js', new Date());
     gtag('config', 'G-L3XZ9E5JLY');
   </script>
-  <!-- END GA (GA4) SNIPPET -->
 
   <!-- Bootstrap 5 CSS -->
   <link 
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoK9gF2TBNhXg+vvFLC2NIDTq0EWr7syxANPZrscNmjV9H1" 
-    crossorigin="anonymous"
+    rel="stylesheet"
   >
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Main CSS -->
   <link rel="stylesheet" href="styles.css" type="text/css">
+
+  <!-- Schema markup for better SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments in the 2025 AI Landscape",
+    "datePublished": "2025-04-11",
+    "author": {
+      "@type": "Person",
+      "name": "Christopher Rothmeier"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Lazarus Laboratories Consulting",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "photos/lazlogo2-draft2.png"
+      }
+    },
+    "description": "Explore how GPU deployments have evolved from mere tools to integral components of business operations, and learn essential security best practices through the lens of current AI/ML trends in 2025."
+  }
+  </script>
 </head>
 
 <body>
-  <!-- [EDITED 5] SIMPLE NAVBAR -->
+  <!-- Simple Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -35,29 +59,21 @@
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" 
-              aria-expanded="false" aria-label="Toggle navigation"
-      >
+              aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about-us-page.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <!-- [EDITED 3] LINKEDIN LINK -->
           <li class="nav-item">
-            <a 
-              class="nav-link" 
-              href="https://www.linkedin.com/in/christopher-rothmeier" 
-              target="_blank"
-            >
-              LinkedIn
-            </a>
+            <a class="nav-link" href="https://www.linkedin.com/in/christopher-rothmeier" target="_blank">LinkedIn</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- END NAVBAR -->
   
   <!-- Blog Post Content Section -->
   <section class="py-5">
@@ -66,17 +82,23 @@
         <div class="col-lg-8">
           <!-- Back link -->
           <div class="mb-4">
-            <a href="blog.html" class="text-decoration-none">
-              &larr; Back to Blog
-            </a>
+            <a href="blog.html" class="text-decoration-none">&larr; Back to Blog</a>
           </div>
           
           <!-- Blog Title and Meta -->
-          <h1 class="blog-post-title mb-3">
-            GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments
-          </h1>
-          <div class="blog-post-meta">
+          <h1 class="blog-post-title mb-3">GPU Infrastructure Security: Best Practices for On-Premises and Hybrid Deployments</h1>
+          <div class="blog-post-meta mb-4">
             By Christopher Rothmeier | April 11, 2025
+          </div>
+          
+          <!-- Featured Image with proper classes -->
+          <div class="mb-4 card-image-container">
+            <img 
+              src="photos/GPUInfra.png" 
+              alt="GPU Security Infrastructure" 
+              class="img-fluid rounded blog-card-image" 
+              loading="lazy"
+              onerror="this.src='photos/datacenter.jpeg';">
           </div>
           
           <!-- Blog Content -->
@@ -324,18 +346,59 @@
             </p>
           </div>
           
-          <!-- AUTHOR BIO W/ LINKEDIN & JOB SEARCH NOTE -->
-          <div class="mt-5 p-4 bg-light rounded">
+          <!-- Post Navigation Section with hover effects -->
+          <div class="blog-post-navigation mt-5 pt-4 border-top">
+            <div class="row">
+              <div class="col-6 text-start">
+                <a href="blog-gpu-implementation.html" class="btn btn-outline-dark">
+                  &larr; Previous Post<br>
+                  <small>Building Your Own GPU Lab</small>
+                </a>
+              </div>
+              <div class="col-6 text-end">
+                <a href="blog-gpu-cost.html" class="btn btn-outline-dark">
+                  Next Post &rarr;<br>
+                  <small>On-Prem GPU Cost Analysis</small>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Related Posts Section with hover cards -->
+          <div class="related-posts mt-5">
+            <h3 class="h4 mb-4">Related Articles</h3>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 hover-card">
+                  <div class="card-body">
+                    <h4 class="h6 card-title">Building Your Own GPU Lab</h4>
+                    <p class="card-text small">Practical implementation tips and lessons learned from my homelab experience.</p>
+                    <a href="blog-gpu-implementation.html" class="btn btn-sm btn-dark glow-button">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <div class="card h-100 hover-card">
+                  <div class="card-body">
+                    <h4 class="h6 card-title">On-Prem GPU Lab: Real Cost Savings</h4>
+                    <p class="card-text small">Cost comparison between cloud services and on-premises AI infrastructure.</p>
+                    <a href="blog-gpu-cost.html" class="btn btn-sm btn-dark glow-button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Author Bio with border styling -->
+          <div class="mt-5 p-4 bg-light rounded highlight-container">
             <div class="d-flex align-items-center mb-3">
               <div>
                 <h5 class="mb-1">About the Author</h5>
                 <p class="mb-0">
                   Christopher Rothmeier runs Lazarus Laboratories Consulting, specializing 
-                  in hybrid cloud and AI-focused infrastructure. 
-                  <!-- [EDIT: REMOVED “mid-level” & “(capped at 75k)” as requested] -->
-                  He's recently built an on-prem GPU lab to cut down on monthly cloud expenses—research that also 
-                  fuels his search for sysadmin roles in Philadelphia. 
-                  Connect on
+                  in hybrid cloud and AI-focused infrastructure. He's recently built an 
+                  on-prem GPU lab to cut down on monthly cloud expenses—research that also 
+                  fuels his search for a sysadmin role in Philadelphia. Connect on
                   <a 
                     href="https://www.linkedin.com/in/christopher-rothmeier"
                     target="_blank"
@@ -351,17 +414,39 @@
     </div>
   </section>
   
-  <!-- CTA / CONTACT SECTION -->
-  <section class="py-5 bg-light">
+  <!-- Share This Article Section -->
+  <section class="py-4 bg-light">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center">
+          <h4 class="h5 mb-3">Share This Article</h4>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-outline-dark btn-sm glow-button">
+              <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" class="btn btn-outline-dark btn-sm glow-button">
+              <i class="bi bi-twitter-x"></i> Twitter
+            </a>
+            <a href="#" class="btn btn-outline-dark btn-sm glow-button">
+              <i class="bi bi-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA / CONTACT SECTION with tilt card effect -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center tilt-card p-5">
           <h3 class="mb-4">Questions about GPU security in the 2025 AI landscape?</h3>
           <p class="mb-4">
             Feel free to reach out if you want to discuss securing your GPU infrastructure for today's 
             AI capabilities, or if you're evaluating new sysadmin hires in the Philadelphia area.
           </p>
-          <a href="mailto:crothmeier@lazarus-labs.com" class="btn btn-primary">Contact Me</a>
+          <a href="mailto:crothmeier@lazarus-labs.com" class="btn btn-primary glow-button">Contact Me</a>
         </div>
       </div>
     </div>
@@ -375,18 +460,18 @@
           Connect on LinkedIn
         </a>
       </p>
-      <!-- [EDIT: Changed “Mid-Level Sysadmin Roles” to “Sysadmin Roles” ] -->
       <p class="mb-0">
         <small>Philadelphia, PA | Seeking Sysadmin Roles</small>
       </p>
     </div>
   </footer>
 
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
   <!-- Bootstrap JS -->
   <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-kenU1KFdBIe4zVF0sG1M5b4hcpxyD9F7jL+Y1N3neuXKRA+7sbeNqURy9B6+fzT" 
-    crossorigin="anonymous">
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
   </script>
 </body>
 </html>
